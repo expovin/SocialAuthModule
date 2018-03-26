@@ -1,0 +1,142 @@
+[32m[2018-03-21T22:35:57.418 22:35:57] [INFO[39m] - both ubuntudev 11214 - Called o365 Strategy!
+[36m[2018-03-23T10:17:30.260 10:17:30] [DEBUG[39m] - both ubuntudev 5737 - Request local authentication, user :  undefined
+[32m[2018-03-23T10:23:42.674 10:23:42] [INFO[39m] - both ubuntudev 6003 - Starting Authentication module
+[32m[2018-03-23T10:23:42.678 10:23:42] [INFO[39m] - both ubuntudev 6003 - Setting session
+[36m[2018-03-23T10:23:55.109 10:23:55] [DEBUG[39m] - both ubuntudev 6003 - Request local authentication, user :  Vinc
+[32m[2018-03-23T10:32:01.605 10:32:01] [INFO[39m] - both ubuntudev 6251 - Starting Authentication module
+[32m[2018-03-23T10:32:01.610 10:32:01] [INFO[39m] - both ubuntudev 6251 - Setting session
+[32m[2018-03-23T10:34:09.604 10:34:09] [INFO[39m] - both ubuntudev 6322 - Starting Authentication module
+[32m[2018-03-23T10:34:09.608 10:34:09] [INFO[39m] - both ubuntudev 6322 - Setting session
+[32m[2018-03-23T10:55:33.528 10:55:33] [INFO[39m] - both ubuntudev 6782 - Starting Authentication module
+[32m[2018-03-23T10:55:33.532 10:55:33] [INFO[39m] - both ubuntudev 6782 - Setting session
+[32m[2018-03-23T11:49:23.779 11:49:23] [INFO[39m] - both ubuntudev 7759 - Starting Authentication module
+[32m[2018-03-23T11:49:23.784 11:49:23] [INFO[39m] - both ubuntudev 7759 - Setting session
+[32m[2018-03-23T11:49:43.870 11:49:43] [INFO[39m] - both ubuntudev 7785 - Starting Authentication module
+[32m[2018-03-23T11:49:43.875 11:49:43] [INFO[39m] - both ubuntudev 7785 - Setting session
+[32m[2018-03-23T11:52:53.391 11:52:53] [INFO[39m] - both ubuntudev 7906 - Starting Authentication module
+[32m[2018-03-23T11:52:53.396 11:52:53] [INFO[39m] - both ubuntudev 7906 - Setting session
+[32m[2018-03-23T11:56:45.847 11:56:45] [INFO[39m] - both ubuntudev 7968 - Starting Authentication module
+[32m[2018-03-23T11:56:45.852 11:56:45] [INFO[39m] - both ubuntudev 7968 - Setting session
+[32m[2018-03-23T11:57:31.158 11:57:31] [INFO[39m] - both ubuntudev 8022 - Starting Authentication module
+[32m[2018-03-23T11:57:31.162 11:57:31] [INFO[39m] - both ubuntudev 8022 - Setting session
+[36m[2018-03-23T11:58:12.464 11:58:12] [DEBUG[39m] - both ubuntudev 8022 - Request local authentication, user :  Vinc
+[32m[2018-03-23T12:03:32.752 12:03:32] [INFO[39m] - both ubuntudev 8296 - Starting Authentication module
+[32m[2018-03-23T12:03:32.757 12:03:32] [INFO[39m] - both ubuntudev 8296 - Setting session
+[36m[2018-03-23T12:03:41.697 12:03:41] [DEBUG[39m] - both ubuntudev 8296 - Request local authentication, user :  Vinc
+[31m[2018-03-23T12:03:41.698 12:03:41] [ERROR[39m] - both ubuntudev 8296 - Error authentication module local policy:  ReferenceError: log is not defined
+    at Strategy._verify (/home/expovin/Dev/SocialAuthModule/lib/authenticate.js:6:7)
+    at Strategy.authenticate (/home/expovin/Dev/SocialAuthModule/node_modules/passport-local/lib/strategy.js:90:12)
+    at attempt (/home/expovin/Dev/SocialAuthModule/node_modules/passport/lib/middleware/authenticate.js:361:16)
+    at authenticate (/home/expovin/Dev/SocialAuthModule/node_modules/passport/lib/middleware/authenticate.js:362:7)
+    at router.route.get.post (/home/expovin/Dev/SocialAuthModule/routes/auth.js:43:7)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+[32m[2018-03-23T12:04:08.346 12:04:08] [INFO[39m] - both ubuntudev 8355 - Starting Authentication module
+[32m[2018-03-23T12:04:08.350 12:04:08] [INFO[39m] - both ubuntudev 8355 - Setting session
+[36m[2018-03-23T12:04:11.895 12:04:11] [DEBUG[39m] - both ubuntudev 8355 - Request local authentication, user :  Vinc
+[36m[2018-03-23T12:04:11.897 12:04:11] [DEBUG[39m] - both ubuntudev 8355 - Now in Authenticate method LocalStrategy, username:  Vinc
+[36m[2018-03-23T12:04:11.897 12:04:11] [DEBUG[39m] - both ubuntudev 8355 - username : Vinc
+[36m[2018-03-23T12:04:11.898 12:04:11] [DEBUG[39m] - both ubuntudev 8355 - password : secret
+[31m[2018-03-23T12:04:11.898 12:04:11] [ERROR[39m] - both ubuntudev 8355 - Error authentication module local policy:  Error authentication. User/Password not valid
+[32m[2018-03-23T12:08:59.583 12:08:59] [INFO[39m] - both ubuntudev 8536 - Starting Authentication module
+[32m[2018-03-23T12:08:59.587 12:08:59] [INFO[39m] - both ubuntudev 8536 - Setting session
+[36m[2018-03-23T12:09:06.318 12:09:06] [DEBUG[39m] - both ubuntudev 8536 - Request local authentication, user :  Vinc
+[36m[2018-03-23T12:09:06.319 12:09:06] [DEBUG[39m] - both ubuntudev 8536 - Now in Authenticate method LocalStrategy, username:  Vinc
+[36m[2018-03-23T12:09:06.319 12:09:06] [DEBUG[39m] - both ubuntudev 8536 - username : Vinc
+[36m[2018-03-23T12:09:06.319 12:09:06] [DEBUG[39m] - both ubuntudev 8536 - password : secret
+[32m[2018-03-23T12:09:06.320 12:09:06] [INFO[39m] - both ubuntudev 8536 - Authentication error. User/password not correct
+[31m[2018-03-23T12:09:06.320 12:09:06] [ERROR[39m] - both ubuntudev 8536 - Error authentication module local policy:  Error authentication. User/Password not valid
+[36m[2018-03-23T12:09:20.543 12:09:20] [DEBUG[39m] - both ubuntudev 8536 - Request local authentication, user :  admin
+[36m[2018-03-23T12:09:20.543 12:09:20] [DEBUG[39m] - both ubuntudev 8536 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-23T12:09:20.543 12:09:20] [DEBUG[39m] - both ubuntudev 8536 - username : admin
+[36m[2018-03-23T12:09:20.544 12:09:20] [DEBUG[39m] - both ubuntudev 8536 - password : admin
+[32m[2018-03-23T12:09:20.544 12:09:20] [INFO[39m] - both ubuntudev 8536 - Authentication error. User/password not correct
+[31m[2018-03-23T12:09:20.544 12:09:20] [ERROR[39m] - both ubuntudev 8536 - Error authentication module local policy:  Error authentication. User/Password not valid
+[32m[2018-03-23T12:10:27.620 12:10:27] [INFO[39m] - both ubuntudev 8630 - Starting Authentication module
+[32m[2018-03-23T12:10:27.625 12:10:27] [INFO[39m] - both ubuntudev 8630 - Setting session
+[36m[2018-03-23T12:10:32.179 12:10:32] [DEBUG[39m] - both ubuntudev 8630 - Request local authentication, user :  admin
+[36m[2018-03-23T12:10:32.180 12:10:32] [DEBUG[39m] - both ubuntudev 8630 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-23T12:10:32.180 12:10:32] [DEBUG[39m] - both ubuntudev 8630 - username : admin
+[36m[2018-03-23T12:10:32.180 12:10:32] [DEBUG[39m] - both ubuntudev 8630 - password : admin
+[36m[2018-03-23T12:10:32.181 12:10:32] [DEBUG[39m] - both ubuntudev 8630 - Check credential user:  admin  password :  admin
+[32m[2018-03-23T12:10:32.181 12:10:32] [INFO[39m] - both ubuntudev 8630 - Authentication error. User/password not correct
+[31m[2018-03-23T12:10:32.181 12:10:32] [ERROR[39m] - both ubuntudev 8630 - Error authentication module local policy:  Error authentication. User/Password not valid
+[32m[2018-03-23T12:11:47.234 12:11:47] [INFO[39m] - both ubuntudev 8696 - Starting Authentication module
+[32m[2018-03-23T12:11:47.238 12:11:47] [INFO[39m] - both ubuntudev 8696 - Setting session
+[36m[2018-03-23T12:11:53.340 12:11:53] [DEBUG[39m] - both ubuntudev 8696 - Request local authentication, user :  admin
+[36m[2018-03-23T12:11:53.341 12:11:53] [DEBUG[39m] - both ubuntudev 8696 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-23T12:11:53.341 12:11:53] [DEBUG[39m] - both ubuntudev 8696 - username : admin
+[36m[2018-03-23T12:11:53.341 12:11:53] [DEBUG[39m] - both ubuntudev 8696 - password : admin
+[36m[2018-03-23T12:11:53.341 12:11:53] [DEBUG[39m] - both ubuntudev 8696 - Check credential user:  admin  password :  admin
+[32m[2018-03-23T12:11:53.342 12:11:53] [INFO[39m] - both ubuntudev 8696 - Authentication error. User/password not correct
+[31m[2018-03-23T12:11:53.342 12:11:53] [ERROR[39m] - both ubuntudev 8696 - Error authentication module local policy:  Error authentication. User/Password not valid
+[32m[2018-03-23T12:12:21.820 12:12:21] [INFO[39m] - both ubuntudev 8753 - Starting Authentication module
+[32m[2018-03-23T12:12:21.826 12:12:21] [INFO[39m] - both ubuntudev 8753 - Setting session
+[36m[2018-03-23T12:12:27.202 12:12:27] [DEBUG[39m] - both ubuntudev 8753 - Request local authentication, user :  admin
+[36m[2018-03-23T12:12:27.203 12:12:27] [DEBUG[39m] - both ubuntudev 8753 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-23T12:12:27.203 12:12:27] [DEBUG[39m] - both ubuntudev 8753 - username : admin
+[36m[2018-03-23T12:12:27.203 12:12:27] [DEBUG[39m] - both ubuntudev 8753 - password : admin
+[36m[2018-03-23T12:12:27.203 12:12:27] [DEBUG[39m] - both ubuntudev 8753 - Check credential user:  admin  password :  admin
+[32m[2018-03-23T12:12:27.204 12:12:27] [INFO[39m] - both ubuntudev 8753 - Authentication succede
+[32m[2018-03-23T12:23:26.416 12:23:26] [INFO[39m] - both ubuntudev 10260 - Starting Authentication module
+[32m[2018-03-23T12:23:26.420 12:23:26] [INFO[39m] - both ubuntudev 10260 - Setting session
+[32m[2018-03-26T10:12:45.595 10:12:45] [INFO[39m] - both ubuntudev 15008 - Starting Authentication module
+[32m[2018-03-26T10:12:45.599 10:12:45] [INFO[39m] - both ubuntudev 15008 - Setting session
+[36m[2018-03-26T10:13:38.851 10:13:38] [DEBUG[39m] - both ubuntudev 15008 - Request local authentication, user :  admin
+[36m[2018-03-26T10:13:38.851 10:13:38] [DEBUG[39m] - both ubuntudev 15008 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-26T10:13:38.852 10:13:38] [DEBUG[39m] - both ubuntudev 15008 - username : admin
+[36m[2018-03-26T10:13:38.852 10:13:38] [DEBUG[39m] - both ubuntudev 15008 - password : admin
+[36m[2018-03-26T10:13:38.852 10:13:38] [DEBUG[39m] - both ubuntudev 15008 - Check credential user:  admin  password :  admin
+[32m[2018-03-26T10:13:38.852 10:13:38] [INFO[39m] - both ubuntudev 15008 - Authentication succede
+[32m[2018-03-26T10:15:57.509 10:15:57] [INFO[39m] - both ubuntudev 15585 - Starting Authentication module
+[32m[2018-03-26T10:15:57.513 10:15:57] [INFO[39m] - both ubuntudev 15585 - Setting session
+[36m[2018-03-26T10:15:59.990 10:15:59] [DEBUG[39m] - both ubuntudev 15585 - Request local authentication, user :  admin
+[36m[2018-03-26T10:15:59.991 10:15:59] [DEBUG[39m] - both ubuntudev 15585 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-26T10:15:59.992 10:15:59] [DEBUG[39m] - both ubuntudev 15585 - username : admin
+[36m[2018-03-26T10:15:59.992 10:15:59] [DEBUG[39m] - both ubuntudev 15585 - password : admin
+[36m[2018-03-26T10:15:59.992 10:15:59] [DEBUG[39m] - both ubuntudev 15585 - Check credential user:  admin  password :  admin
+[32m[2018-03-26T10:15:59.992 10:15:59] [INFO[39m] - both ubuntudev 15585 - Authentication succede
+[36m[2018-03-26T10:15:59.994 10:15:59] [DEBUG[39m] - both ubuntudev 15585 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6IkxvY2FsIiwiaWF0IjoxNTIyMDUyMTU5LCJleHAiOjE1MjIxMzg1NTl9.KSdi_lW6Wb6nqBLsEivvyw_3ST5EAEQlHt2jAaCUktg
+[32m[2018-03-26T10:30:34.971 10:30:34] [INFO[39m] - both ubuntudev 17383 - Starting Authentication module
+[32m[2018-03-26T10:30:34.975 10:30:34] [INFO[39m] - both ubuntudev 17383 - Setting session
+[32m[2018-03-26T10:34:43.480 10:34:43] [INFO[39m] - both ubuntudev 17540 - Starting Authentication module
+[32m[2018-03-26T10:34:43.484 10:34:43] [INFO[39m] - both ubuntudev 17540 - Setting session
+[32m[2018-03-26T10:37:50.196 10:37:50] [INFO[39m] - both ubuntudev 17805 - Starting Authentication module
+[32m[2018-03-26T10:37:50.200 10:37:50] [INFO[39m] - both ubuntudev 17805 - Setting session
+[31m[2018-03-26T10:37:54.007 10:37:54] [ERROR[39m] - both ubuntudev 17805 - Error Token not provided
+[31m[2018-03-26T10:38:31.053 10:38:31] [ERROR[39m] - both ubuntudev 17805 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[36m[2018-03-26T10:39:32.431 10:39:32] [DEBUG[39m] - both ubuntudev 17805 - Request local authentication, user :  admin
+[36m[2018-03-26T10:39:32.431 10:39:32] [DEBUG[39m] - both ubuntudev 17805 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-26T10:39:32.431 10:39:32] [DEBUG[39m] - both ubuntudev 17805 - username : admin
+[36m[2018-03-26T10:39:32.432 10:39:32] [DEBUG[39m] - both ubuntudev 17805 - password : admin
+[36m[2018-03-26T10:39:32.432 10:39:32] [DEBUG[39m] - both ubuntudev 17805 - Check credential user:  admin  password :  admin
+[32m[2018-03-26T10:39:32.433 10:39:32] [INFO[39m] - both ubuntudev 17805 - Authentication succede
+[36m[2018-03-26T10:39:32.435 10:39:32] [DEBUG[39m] - both ubuntudev 17805 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMDUzNTcyLCJleHAiOjE1MjIxMzk5NzJ9.rPPRf-1IrT2y-lofvIAibX957peuYwGc3N5fql63tlM
+[36m[2018-03-26T10:40:24.900 10:40:24] [DEBUG[39m] - both ubuntudev 17805 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522053572,
+  exp: 1522139972 }
+[36m[2018-03-26T10:40:24.901 10:40:24] [DEBUG[39m] - both ubuntudev 17805 - Ordinary user
+[32m[2018-03-26T11:38:45.837 11:38:45] [INFO[39m] - both ubuntudev 4604 - Starting Authentication module
+[32m[2018-03-26T11:38:45.841 11:38:45] [INFO[39m] - both ubuntudev 4604 - Setting session
+[32m[2018-03-26T11:44:27.146 11:44:27] [INFO[39m] - both ubuntudev 4737 - Starting Authentication module
+[32m[2018-03-26T11:44:27.150 11:44:27] [INFO[39m] - both ubuntudev 4737 - Setting session
+[31m[2018-03-26T11:44:47.781 11:44:47] [ERROR[39m] - both ubuntudev 4737 - Error Token not provided
+[32m[2018-03-26T11:54:33.663 11:54:33] [INFO[39m] - both ubuntudev 4916 - Starting Authentication module
+[32m[2018-03-26T11:54:33.667 11:54:33] [INFO[39m] - both ubuntudev 4916 - Setting session
+[31m[2018-03-26T11:54:46.110 11:54:46] [ERROR[39m] - both ubuntudev 4916 - Error Token not provided
+[32m[2018-03-26T11:54:52.887 11:54:52] [INFO[39m] - both ubuntudev 4945 - Starting Authentication module
+[32m[2018-03-26T11:54:52.891 11:54:52] [INFO[39m] - both ubuntudev 4945 - Setting session
