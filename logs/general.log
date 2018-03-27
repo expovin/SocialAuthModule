@@ -140,3 +140,89 @@
 [31m[2018-03-26T11:54:46.110 11:54:46] [ERROR[39m] - both ubuntudev 4916 - Error Token not provided
 [32m[2018-03-26T11:54:52.887 11:54:52] [INFO[39m] - both ubuntudev 4945 - Starting Authentication module
 [32m[2018-03-26T11:54:52.891 11:54:52] [INFO[39m] - both ubuntudev 4945 - Setting session
+[32m[2018-03-26T13:09:44.228 13:09:44] [INFO[39m] - both ubuntudev 10157 - Starting Authentication module
+[32m[2018-03-26T13:09:44.232 13:09:44] [INFO[39m] - both ubuntudev 10157 - Setting session
+[32m[2018-03-26T13:10:17.838 13:10:17] [INFO[39m] - both ubuntudev 10190 - Starting Authentication module
+[32m[2018-03-26T13:10:17.842 13:10:17] [INFO[39m] - both ubuntudev 10190 - Setting session
+[32m[2018-03-26T13:35:39.078 13:35:39] [INFO[39m] - both ubuntudev 11540 - Starting Authentication module
+[32m[2018-03-26T13:35:39.082 13:35:39] [INFO[39m] - both ubuntudev 11540 - Setting session
+[32m[2018-03-26T14:31:48.871 14:31:48] [INFO[39m] - both ubuntudev 13154 - Starting Authentication module
+[32m[2018-03-26T14:31:48.875 14:31:48] [INFO[39m] - both ubuntudev 13154 - Setting session
+[32m[2018-03-26T14:35:48.697 14:35:48] [INFO[39m] - both ubuntudev 13317 - Starting Authentication module
+[32m[2018-03-26T14:35:48.701 14:35:48] [INFO[39m] - both ubuntudev 13317 - Setting session
+[31m[2018-03-26T14:37:26.077 14:37:26] [ERROR[39m] - both ubuntudev 13317 - Error Token not provided
+[32m[2018-03-26T15:04:44.786 15:04:44] [INFO[39m] - both ubuntudev 14126 - Starting Authentication module
+[32m[2018-03-26T15:04:44.790 15:04:44] [INFO[39m] - both ubuntudev 14126 - Setting session
+[31m[2018-03-26T15:04:59.258 15:04:59] [ERROR[39m] - both ubuntudev 14126 - Error Token not provided
+[32m[2018-03-26T15:16:41.435 15:16:41] [INFO[39m] - both ubuntudev 14414 - Starting Authentication module
+[32m[2018-03-26T15:16:41.439 15:16:41] [INFO[39m] - both ubuntudev 14414 - Setting session
+[31m[2018-03-26T15:16:48.517 15:16:48] [ERROR[39m] - both ubuntudev 14414 - Error Token not provided
+[32m[2018-03-26T15:22:43.146 15:22:43] [INFO[39m] - both ubuntudev 14728 - Starting Authentication module
+[32m[2018-03-26T15:22:43.151 15:22:43] [INFO[39m] - both ubuntudev 14728 - Setting session
+[31m[2018-03-26T15:22:50.580 15:22:50] [ERROR[39m] - both ubuntudev 14728 - Error Token not provided
+[32m[2018-03-26T15:23:51.373 15:23:51] [INFO[39m] - both ubuntudev 14806 - Starting Authentication module
+[32m[2018-03-26T15:23:51.378 15:23:51] [INFO[39m] - both ubuntudev 14806 - Setting session
+[31m[2018-03-26T15:24:00.275 15:24:00] [ERROR[39m] - both ubuntudev 14806 - Error Token not provided
+[32m[2018-03-26T15:55:28.260 15:55:28] [INFO[39m] - both ubuntudev 15429 - Starting Authentication module
+[32m[2018-03-26T15:55:28.265 15:55:28] [INFO[39m] - both ubuntudev 15429 - Setting session
+[32m[2018-03-26T16:02:01.741 16:02:01] [INFO[39m] - both ubuntudev 15576 - Starting Authentication module
+[32m[2018-03-26T16:02:01.745 16:02:01] [INFO[39m] - both ubuntudev 15576 - Setting session
+[32m[2018-03-26T17:11:53.084 17:11:53] [INFO[39m] - both ubuntudev 17233 - Starting Authentication module
+[32m[2018-03-26T17:11:53.088 17:11:53] [INFO[39m] - both ubuntudev 17233 - Setting session
+[31m[2018-03-26T17:12:08.295 17:12:08] [ERROR[39m] - both ubuntudev 17233 - Error Token not provided
+[31m[2018-03-26T17:12:12.969 17:12:12] [ERROR[39m] - both ubuntudev 17233 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[31m[2018-03-26T17:14:06.562 17:14:06] [ERROR[39m] - both ubuntudev 17233 - Error Token not provided
+[31m[2018-03-26T17:14:45.518 17:14:45] [ERROR[39m] - both ubuntudev 17233 - Error Token not provided
+[31m[2018-03-26T17:15:15.097 17:15:15] [ERROR[39m] - both ubuntudev 17233 - Error Token not provided
+[31m[2018-03-26T17:16:36.776 17:16:36] [ERROR[39m] - both ubuntudev 17233 - Error Token not provided
+[31m[2018-03-26T17:16:57.415 17:16:57] [ERROR[39m] - both ubuntudev 17233 - Error Token not provided
+[32m[2018-03-26T17:18:23.000 17:18:23] [INFO[39m] - both ubuntudev 17493 - Starting Authentication module
+[32m[2018-03-26T17:18:23.005 17:18:23] [INFO[39m] - both ubuntudev 17493 - Setting session
+[31m[2018-03-26T17:18:30.495 17:18:30] [ERROR[39m] - both ubuntudev 17493 - Error Token not provided
+[32m[2018-03-26T17:21:58.169 17:21:58] [INFO[39m] - both ubuntudev 17650 - Starting Authentication module
+[32m[2018-03-26T17:21:58.173 17:21:58] [INFO[39m] - both ubuntudev 17650 - Setting session
+[31m[2018-03-26T17:22:09.883 17:22:09] [ERROR[39m] - both ubuntudev 17650 - Error Token not provided
+[32m[2018-03-26T17:27:43.509 17:27:43] [INFO[39m] - both ubuntudev 17833 - Starting Authentication module
+[32m[2018-03-26T17:27:43.514 17:27:43] [INFO[39m] - both ubuntudev 17833 - Setting session
+[31m[2018-03-26T17:27:51.905 17:27:51] [ERROR[39m] - both ubuntudev 17833 - Error Token not provided
+[32m[2018-03-26T17:30:24.876 17:30:24] [INFO[39m] - both ubuntudev 17939 - Starting Authentication module
+[32m[2018-03-26T17:30:24.881 17:30:24] [INFO[39m] - both ubuntudev 17939 - Setting session
+[31m[2018-03-26T17:30:36.396 17:30:36] [ERROR[39m] - both ubuntudev 17939 - Error Token not provided
+[31m[2018-03-26T17:30:43.973 17:30:43] [ERROR[39m] - both ubuntudev 17939 - Error Token not provided
+[31m[2018-03-26T17:30:51.753 17:30:51] [ERROR[39m] - both ubuntudev 17939 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[32m[2018-03-26T17:35:43.743 17:35:43] [INFO[39m] - both ubuntudev 18106 - Starting Authentication module
+[32m[2018-03-26T17:35:43.748 17:35:43] [INFO[39m] - both ubuntudev 18106 - Setting session
+[31m[2018-03-26T17:35:56.492 17:35:56] [ERROR[39m] - both ubuntudev 18106 - Error Token not provided
+[32m[2018-03-26T17:38:27.294 17:38:27] [INFO[39m] - both ubuntudev 18243 - Starting Authentication module
+[32m[2018-03-26T17:38:27.302 17:38:27] [INFO[39m] - both ubuntudev 18243 - Setting session
+[31m[2018-03-26T17:38:32.341 17:38:32] [ERROR[39m] - both ubuntudev 18243 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }

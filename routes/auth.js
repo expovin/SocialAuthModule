@@ -13,6 +13,11 @@ router.route('/')
     res.status(200).json({Return : 'OK'});
 })
 
+router.route('/info')
+.get( (req, res, next) => {
+
+    res.status(200).json({status : 'OK', methods : ['local']});
+})
 /** Local Authentication */
 router.route('/local')
 // Return some information on the use
@@ -41,7 +46,7 @@ router.route('/local')
         log.debug("Token : ",token);
 
         res.status(200)
-        .json({ Status : 'OK', "token" : token })
+        .json({ success : true, "token" : token })
     })(req,res,next);
 })
 
