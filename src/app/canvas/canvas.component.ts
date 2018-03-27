@@ -17,12 +17,12 @@ export class CanvasComponent implements OnInit {
   error:boolean=false;
 
   constructor(private dataConfigService: DataConfigService,
-              private activatedRoute: ActivatedRoute) { }
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
     
     // subscribe to router event
-    this.activatedRoute.queryParams
+    this.route.queryParams
     .subscribe((params: Params) => {
       console.log("params:",params);
       let token = params.token;
