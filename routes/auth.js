@@ -23,7 +23,7 @@ router.route('/local')
 // Return some information on the use
 .get(Verify.verifyOrdinaryUser, (req, res, next) => {
 
-    res.status(200).json({Return : 'You are correctly logged in as Ordinary user'});
+    res.status(200).json({success: true, user : 'You are correctly logged in as Ordinary user'});
 })
 // Actual Local implementation
 .post( (req, res, next) => {

@@ -1,7 +1,10 @@
 <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand"><img src="assets/img/qlik-sense.png" width="80px"/>Authentication Module</a>
-  <div class="logIcon">
-    <i class="fa fa-sign-in" aria-hidden="true"></i>
+  <div [hidden]="logStatus" class="logIcon">
+    <span class="fa fa-sign-in" aria-hidden="true" (click)="openLoginModal()"></span>
   </div>
-  
+
+  <div [hidden]="!logStatus" class="logIcon">
+    <span class="fa fa-sign-out" aria-hidden="true" (click)="logOut()"></span>
+  </div>
 </nav>

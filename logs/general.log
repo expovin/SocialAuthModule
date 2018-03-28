@@ -226,3 +226,280 @@
     at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
     at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
     at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[32m[2018-03-28T09:47:36.761 09:47:36] [INFO[39m] - both ubuntudev 6320 - Starting Authentication module
+[32m[2018-03-28T09:47:36.766 09:47:36] [INFO[39m] - both ubuntudev 6320 - Setting session
+[31m[2018-03-28T09:47:49.214 09:47:49] [ERROR[39m] - both ubuntudev 6320 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[31m[2018-03-28T09:50:33.805 09:50:33] [ERROR[39m] - both ubuntudev 6320 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[32m[2018-03-28T12:18:13.298 12:18:13] [INFO[39m] - both ubuntudev 10563 - Starting Authentication module
+[32m[2018-03-28T12:18:13.302 12:18:13] [INFO[39m] - both ubuntudev 10563 - Setting session
+[31m[2018-03-28T12:18:22.099 12:18:22] [ERROR[39m] - both ubuntudev 10563 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[36m[2018-03-28T12:18:29.994 12:18:29] [DEBUG[39m] - both ubuntudev 10563 - Request local authentication, user :  vince
+[36m[2018-03-28T12:18:29.994 12:18:29] [DEBUG[39m] - both ubuntudev 10563 - Now in Authenticate method LocalStrategy, username:  vince
+[36m[2018-03-28T12:18:29.994 12:18:29] [DEBUG[39m] - both ubuntudev 10563 - username : vince
+[36m[2018-03-28T12:18:29.995 12:18:29] [DEBUG[39m] - both ubuntudev 10563 - password : topsecret
+[36m[2018-03-28T12:18:29.996 12:18:29] [DEBUG[39m] - both ubuntudev 10563 - Check credential user:  vince  password :  topsecret
+[32m[2018-03-28T12:18:29.997 12:18:29] [INFO[39m] - both ubuntudev 10563 - Authentication error. User/password not correct
+[31m[2018-03-28T12:18:29.998 12:18:29] [ERROR[39m] - both ubuntudev 10563 - Error authentication module local policy:  Error authentication. User/Password not valid
+[36m[2018-03-28T12:18:49.553 12:18:49] [DEBUG[39m] - both ubuntudev 10563 - Request local authentication, user :  admin
+[36m[2018-03-28T12:18:49.553 12:18:49] [DEBUG[39m] - both ubuntudev 10563 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T12:18:49.554 12:18:49] [DEBUG[39m] - both ubuntudev 10563 - username : admin
+[36m[2018-03-28T12:18:49.554 12:18:49] [DEBUG[39m] - both ubuntudev 10563 - password : admin
+[36m[2018-03-28T12:18:49.554 12:18:49] [DEBUG[39m] - both ubuntudev 10563 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T12:18:49.554 12:18:49] [INFO[39m] - both ubuntudev 10563 - Authentication succede
+[36m[2018-03-28T12:18:49.556 12:18:49] [DEBUG[39m] - both ubuntudev 10563 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjMyMzI5LCJleHAiOjE1MjIzMTg3Mjl9.A5Yo3MnU7qkN8lCKYg-ZPdE4Xw10LWnur_716GalWgU
+[32m[2018-03-28T12:29:24.293 12:29:24] [INFO[39m] - both ubuntudev 10837 - Starting Authentication module
+[32m[2018-03-28T12:29:24.298 12:29:24] [INFO[39m] - both ubuntudev 10837 - Setting session
+[36m[2018-03-28T12:29:26.917 12:29:26] [DEBUG[39m] - both ubuntudev 10837 - Request local authentication, user :  admin
+[36m[2018-03-28T12:29:26.918 12:29:26] [DEBUG[39m] - both ubuntudev 10837 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T12:29:26.918 12:29:26] [DEBUG[39m] - both ubuntudev 10837 - username : admin
+[36m[2018-03-28T12:29:26.918 12:29:26] [DEBUG[39m] - both ubuntudev 10837 - password : admin
+[36m[2018-03-28T12:29:26.918 12:29:26] [DEBUG[39m] - both ubuntudev 10837 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T12:29:26.919 12:29:26] [INFO[39m] - both ubuntudev 10837 - Authentication succede
+[36m[2018-03-28T12:29:26.921 12:29:26] [DEBUG[39m] - both ubuntudev 10837 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjMyOTY2LCJleHAiOjE1MjIzMTkzNjZ9.vhu7w0UfA_vuZ-1KpwN8DsC_zr3jz6vChx7wlF8taak
+[31m[2018-03-28T12:29:29.396 12:29:29] [ERROR[39m] - both ubuntudev 10837 - Token verification error.  { Error: You are not authenticated!
+    at /home/expovin/Dev/SocialAuthModule/lib/verify.js:21:27
+    at Object.module.exports [as verify] (/home/expovin/Dev/SocialAuthModule/node_modules/jsonwebtoken/verify.js:49:12)
+    at exports.verifyOrdinaryUser (/home/expovin/Dev/SocialAuthModule/lib/verify.js:19:13)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/layer.js:95:5)
+    at /home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/expovin/Dev/SocialAuthModule/node_modules/express/lib/router/index.js:275:10) status: 401 }
+[36m[2018-03-28T12:29:43.174 12:29:43] [DEBUG[39m] - both ubuntudev 10837 - Request local authentication, user :  admin
+[36m[2018-03-28T12:29:43.174 12:29:43] [DEBUG[39m] - both ubuntudev 10837 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T12:29:43.175 12:29:43] [DEBUG[39m] - both ubuntudev 10837 - username : admin
+[36m[2018-03-28T12:29:43.175 12:29:43] [DEBUG[39m] - both ubuntudev 10837 - password : admin
+[36m[2018-03-28T12:29:43.175 12:29:43] [DEBUG[39m] - both ubuntudev 10837 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T12:29:43.175 12:29:43] [INFO[39m] - both ubuntudev 10837 - Authentication succede
+[36m[2018-03-28T12:29:43.176 12:29:43] [DEBUG[39m] - both ubuntudev 10837 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjMyOTgzLCJleHAiOjE1MjIzMTkzODN9.u0cffEzGSKXesQl5V2atQrkltMqjlnznajfJ2grbqP4
+[32m[2018-03-28T12:32:14.272 12:32:14] [INFO[39m] - both ubuntudev 10960 - Starting Authentication module
+[32m[2018-03-28T12:32:14.277 12:32:14] [INFO[39m] - both ubuntudev 10960 - Setting session
+[31m[2018-03-28T12:32:29.729 12:32:29] [ERROR[39m] - both ubuntudev 10960 - Error Token not provided
+[32m[2018-03-28T14:04:57.340 14:04:57] [INFO[39m] - both ubuntudev 21301 - Starting Authentication module
+[32m[2018-03-28T14:04:57.344 14:04:57] [INFO[39m] - both ubuntudev 21301 - Setting session
+[32m[2018-03-28T14:06:45.147 14:06:45] [INFO[39m] - both ubuntudev 21511 - Starting Authentication module
+[32m[2018-03-28T14:06:45.150 14:06:45] [INFO[39m] - both ubuntudev 21511 - Setting session
+[32m[2018-03-28T14:08:59.083 14:08:59] [INFO[39m] - both ubuntudev 21595 - Starting Authentication module
+[32m[2018-03-28T14:08:59.089 14:08:59] [INFO[39m] - both ubuntudev 21595 - Setting session
+[31m[2018-03-28T14:09:03.748 14:09:03] [ERROR[39m] - both ubuntudev 21595 - Error Token not provided
+[36m[2018-03-28T14:09:57.803 14:09:57] [DEBUG[39m] - both ubuntudev 21595 - Request local authentication, user :  admin
+[36m[2018-03-28T14:09:57.804 14:09:57] [DEBUG[39m] - both ubuntudev 21595 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T14:09:57.805 14:09:57] [DEBUG[39m] - both ubuntudev 21595 - username : admin
+[36m[2018-03-28T14:09:57.806 14:09:57] [DEBUG[39m] - both ubuntudev 21595 - password : admin
+[36m[2018-03-28T14:09:57.806 14:09:57] [DEBUG[39m] - both ubuntudev 21595 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T14:09:57.807 14:09:57] [INFO[39m] - both ubuntudev 21595 - Authentication succede
+[36m[2018-03-28T14:09:57.809 14:09:57] [DEBUG[39m] - both ubuntudev 21595 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjM4OTk3LCJleHAiOjE1MjIzMjUzOTd9.Uctz5JZUqt4Iq79y_nQKxSkCFDNPw59WwYt2gCeulxQ
+[36m[2018-03-28T14:10:17.040 14:10:17] [DEBUG[39m] - both ubuntudev 21595 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522238997,
+  exp: 1522325397 }
+[36m[2018-03-28T14:10:17.042 14:10:17] [DEBUG[39m] - both ubuntudev 21595 - Ordinary user
+[32m[2018-03-28T15:31:02.629 15:31:02] [INFO[39m] - both ubuntudev 23433 - Starting Authentication module
+[32m[2018-03-28T15:31:02.633 15:31:02] [INFO[39m] - both ubuntudev 23433 - Setting session
+[31m[2018-03-28T15:31:18.492 15:31:18] [ERROR[39m] - both ubuntudev 23433 - Error Token not provided
+[36m[2018-03-28T15:31:48.057 15:31:48] [DEBUG[39m] - both ubuntudev 23433 - Request local authentication, user :  admin
+[36m[2018-03-28T15:31:48.057 15:31:48] [DEBUG[39m] - both ubuntudev 23433 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T15:31:48.058 15:31:48] [DEBUG[39m] - both ubuntudev 23433 - username : admin
+[36m[2018-03-28T15:31:48.058 15:31:48] [DEBUG[39m] - both ubuntudev 23433 - password : admin
+[36m[2018-03-28T15:31:48.058 15:31:48] [DEBUG[39m] - both ubuntudev 23433 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T15:31:48.058 15:31:48] [INFO[39m] - both ubuntudev 23433 - Authentication succede
+[36m[2018-03-28T15:31:48.060 15:31:48] [DEBUG[39m] - both ubuntudev 23433 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQzOTA4LCJleHAiOjE1MjIzMzAzMDh9.TFmi0tzP7hf-1bPn3HDnaab5kzp1d0Vr7M_kPYc2CRY
+[36m[2018-03-28T15:31:56.536 15:31:56] [DEBUG[39m] - both ubuntudev 23433 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522243908,
+  exp: 1522330308 }
+[36m[2018-03-28T15:31:56.539 15:31:56] [DEBUG[39m] - both ubuntudev 23433 - Ordinary user
+[36m[2018-03-28T15:32:10.275 15:32:10] [DEBUG[39m] - both ubuntudev 23433 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522238997,
+  exp: 1522325397 }
+[36m[2018-03-28T15:32:10.276 15:32:10] [DEBUG[39m] - both ubuntudev 23433 - Ordinary user
+[36m[2018-03-28T15:32:19.341 15:32:19] [DEBUG[39m] - both ubuntudev 23433 - Request local authentication, user :  admin
+[36m[2018-03-28T15:32:19.342 15:32:19] [DEBUG[39m] - both ubuntudev 23433 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T15:32:19.342 15:32:19] [DEBUG[39m] - both ubuntudev 23433 - username : admin
+[36m[2018-03-28T15:32:19.342 15:32:19] [DEBUG[39m] - both ubuntudev 23433 - password : admin
+[36m[2018-03-28T15:32:19.342 15:32:19] [DEBUG[39m] - both ubuntudev 23433 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T15:32:19.342 15:32:19] [INFO[39m] - both ubuntudev 23433 - Authentication succede
+[36m[2018-03-28T15:32:19.343 15:32:19] [DEBUG[39m] - both ubuntudev 23433 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQzOTM5LCJleHAiOjE1MjIzMzAzMzl9.r-6OjdCHV5s42ge-hKvE46w_jPf6j8bBqCVQ_cD6P9g
+[36m[2018-03-28T15:32:24.531 15:32:24] [DEBUG[39m] - both ubuntudev 23433 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522243939,
+  exp: 1522330339 }
+[36m[2018-03-28T15:32:24.532 15:32:24] [DEBUG[39m] - both ubuntudev 23433 - Ordinary user
+[32m[2018-03-28T15:46:16.428 15:46:16] [INFO[39m] - both ubuntudev 24075 - Starting Authentication module
+[32m[2018-03-28T15:46:16.433 15:46:16] [INFO[39m] - both ubuntudev 24075 - Setting session
+[36m[2018-03-28T15:46:33.074 15:46:33] [DEBUG[39m] - both ubuntudev 24075 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522243939,
+  exp: 1522330339 }
+[36m[2018-03-28T15:46:33.077 15:46:33] [DEBUG[39m] - both ubuntudev 24075 - Ordinary user
+[32m[2018-03-28T15:48:40.816 15:48:40] [INFO[39m] - both ubuntudev 24173 - Starting Authentication module
+[32m[2018-03-28T15:48:40.821 15:48:40] [INFO[39m] - both ubuntudev 24173 - Setting session
+[36m[2018-03-28T15:48:46.207 15:48:46] [DEBUG[39m] - both ubuntudev 24173 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522243939,
+  exp: 1522330339 }
+[36m[2018-03-28T15:48:46.209 15:48:46] [DEBUG[39m] - both ubuntudev 24173 - Ordinary user
+[32m[2018-03-28T15:52:04.186 15:52:04] [INFO[39m] - both ubuntudev 24301 - Starting Authentication module
+[32m[2018-03-28T15:52:04.190 15:52:04] [INFO[39m] - both ubuntudev 24301 - Setting session
+[32m[2018-03-28T15:52:20.661 15:52:20] [INFO[39m] - both ubuntudev 24337 - Starting Authentication module
+[32m[2018-03-28T15:52:20.665 15:52:20] [INFO[39m] - both ubuntudev 24337 - Setting session
+[36m[2018-03-28T15:52:32.509 15:52:32] [DEBUG[39m] - both ubuntudev 24337 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522243939,
+  exp: 1522330339 }
+[36m[2018-03-28T15:52:32.514 15:52:32] [DEBUG[39m] - both ubuntudev 24337 - Ordinary user
+[31m[2018-03-28T15:52:59.993 15:52:59] [ERROR[39m] - both ubuntudev 24337 - Error Token not provided
+[36m[2018-03-28T15:53:08.894 15:53:08] [DEBUG[39m] - both ubuntudev 24337 - Request local authentication, user :  admin
+[36m[2018-03-28T15:53:08.895 15:53:08] [DEBUG[39m] - both ubuntudev 24337 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T15:53:08.895 15:53:08] [DEBUG[39m] - both ubuntudev 24337 - username : admin
+[36m[2018-03-28T15:53:08.895 15:53:08] [DEBUG[39m] - both ubuntudev 24337 - password : admin
+[36m[2018-03-28T15:53:08.896 15:53:08] [DEBUG[39m] - both ubuntudev 24337 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T15:53:08.896 15:53:08] [INFO[39m] - both ubuntudev 24337 - Authentication succede
+[36m[2018-03-28T15:53:08.898 15:53:08] [DEBUG[39m] - both ubuntudev 24337 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQ1MTg4LCJleHAiOjE1MjIzMzE1ODh9.t2IBPljIBzvbey1UX0qiluv_Lp5FoENF1ktx1vp6EtY
+[36m[2018-03-28T15:53:13.757 15:53:13] [DEBUG[39m] - both ubuntudev 24337 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245188,
+  exp: 1522331588 }
+[36m[2018-03-28T15:53:13.757 15:53:13] [DEBUG[39m] - both ubuntudev 24337 - Ordinary user
+[32m[2018-03-28T15:58:30.770 15:58:30] [INFO[39m] - both ubuntudev 24593 - Starting Authentication module
+[32m[2018-03-28T15:58:30.774 15:58:30] [INFO[39m] - both ubuntudev 24593 - Setting session
+[31m[2018-03-28T15:58:42.253 15:58:42] [ERROR[39m] - both ubuntudev 24593 - Error Token not provided
+[36m[2018-03-28T15:58:50.235 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - Request local authentication, user :  admin
+[36m[2018-03-28T15:58:50.235 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T15:58:50.236 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - username : admin
+[36m[2018-03-28T15:58:50.236 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - password : admin
+[36m[2018-03-28T15:58:50.237 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T15:58:50.237 15:58:50] [INFO[39m] - both ubuntudev 24593 - Authentication succede
+[36m[2018-03-28T15:58:50.238 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQ1NTMwLCJleHAiOjE1MjIzMzE5MzB9.zrsKmufPQbLttbwZYMTRlURJHS6RJSfUgEagMWeuF_s
+[36m[2018-03-28T15:58:50.262 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245530,
+  exp: 1522331930 }
+[36m[2018-03-28T15:58:50.267 15:58:50] [DEBUG[39m] - both ubuntudev 24593 - Ordinary user
+[36m[2018-03-28T15:59:51.552 15:59:51] [DEBUG[39m] - both ubuntudev 24593 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245530,
+  exp: 1522331930 }
+[36m[2018-03-28T15:59:51.552 15:59:51] [DEBUG[39m] - both ubuntudev 24593 - Ordinary user
+[32m[2018-03-28T16:02:07.226 16:02:07] [INFO[39m] - both ubuntudev 24719 - Starting Authentication module
+[32m[2018-03-28T16:02:07.229 16:02:07] [INFO[39m] - both ubuntudev 24719 - Setting session
+[31m[2018-03-28T16:02:17.287 16:02:17] [ERROR[39m] - both ubuntudev 24719 - Error Token not provided
+[36m[2018-03-28T16:02:24.132 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - Request local authentication, user :  admin
+[36m[2018-03-28T16:02:24.133 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T16:02:24.133 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - username : admin
+[36m[2018-03-28T16:02:24.133 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - password : admin
+[36m[2018-03-28T16:02:24.134 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T16:02:24.134 16:02:24] [INFO[39m] - both ubuntudev 24719 - Authentication succede
+[36m[2018-03-28T16:02:24.136 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQ1NzQ0LCJleHAiOjE1MjIzMzIxNDR9.ynkOsR_MM2ebqxFfpoK-6ag-gxkbzp_8-YYRJJzz08c
+[36m[2018-03-28T16:02:24.159 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245744,
+  exp: 1522332144 }
+[36m[2018-03-28T16:02:24.168 16:02:24] [DEBUG[39m] - both ubuntudev 24719 - Ordinary user
+[31m[2018-03-28T16:02:59.441 16:02:59] [ERROR[39m] - both ubuntudev 24719 - Error Token not provided
+[36m[2018-03-28T16:03:08.680 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - Request local authentication, user :  admin
+[36m[2018-03-28T16:03:08.681 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T16:03:08.681 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - username : admin
+[36m[2018-03-28T16:03:08.681 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - password : admin
+[36m[2018-03-28T16:03:08.681 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T16:03:08.681 16:03:08] [INFO[39m] - both ubuntudev 24719 - Authentication succede
+[36m[2018-03-28T16:03:08.681 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQ1Nzg4LCJleHAiOjE1MjIzMzIxODh9.B9xueSsCcziSCAnTM1Q9uWVGzH1jICoj0pL9vYZz7F8
+[36m[2018-03-28T16:03:08.713 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245788,
+  exp: 1522332188 }
+[36m[2018-03-28T16:03:08.714 16:03:08] [DEBUG[39m] - both ubuntudev 24719 - Ordinary user
+[36m[2018-03-28T16:03:19.921 16:03:19] [DEBUG[39m] - both ubuntudev 24719 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245788,
+  exp: 1522332188 }
+[36m[2018-03-28T16:03:19.925 16:03:19] [DEBUG[39m] - both ubuntudev 24719 - Ordinary user
+[32m[2018-03-28T16:05:38.447 16:05:38] [INFO[39m] - both ubuntudev 24862 - Starting Authentication module
+[32m[2018-03-28T16:05:38.452 16:05:38] [INFO[39m] - both ubuntudev 24862 - Setting session
+[32m[2018-03-28T16:06:00.738 16:06:00] [INFO[39m] - both ubuntudev 24901 - Starting Authentication module
+[32m[2018-03-28T16:06:00.741 16:06:00] [INFO[39m] - both ubuntudev 24901 - Setting session
+[31m[2018-03-28T16:06:04.673 16:06:04] [ERROR[39m] - both ubuntudev 24901 - Error Token not provided
+[36m[2018-03-28T16:06:13.324 16:06:13] [DEBUG[39m] - both ubuntudev 24901 - Request local authentication, user :  admin
+[36m[2018-03-28T16:06:13.324 16:06:13] [DEBUG[39m] - both ubuntudev 24901 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T16:06:13.325 16:06:13] [DEBUG[39m] - both ubuntudev 24901 - username : admin
+[36m[2018-03-28T16:06:13.325 16:06:13] [DEBUG[39m] - both ubuntudev 24901 - password : admin
+[36m[2018-03-28T16:06:13.325 16:06:13] [DEBUG[39m] - both ubuntudev 24901 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T16:06:13.325 16:06:13] [INFO[39m] - both ubuntudev 24901 - Authentication succede
+[36m[2018-03-28T16:06:13.328 16:06:13] [DEBUG[39m] - both ubuntudev 24901 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQ1OTczLCJleHAiOjE1MjIzMzIzNzN9.7tvwgOYboqt6-eU2HAa6bvj-Mvt2CsjTuLbq_RLnw8k
+[36m[2018-03-28T16:06:14.509 16:06:14] [DEBUG[39m] - both ubuntudev 24901 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245973,
+  exp: 1522332373 }
+[36m[2018-03-28T16:06:14.511 16:06:14] [DEBUG[39m] - both ubuntudev 24901 - Ordinary user
+[32m[2018-03-28T16:27:10.318 16:27:10] [INFO[39m] - both ubuntudev 25513 - Starting Authentication module
+[32m[2018-03-28T16:27:10.322 16:27:10] [INFO[39m] - both ubuntudev 25513 - Setting session
+[36m[2018-03-28T16:27:20.552 16:27:20] [DEBUG[39m] - both ubuntudev 25513 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245973,
+  exp: 1522332373 }
+[36m[2018-03-28T16:27:20.555 16:27:20] [DEBUG[39m] - both ubuntudev 25513 - Ordinary user
+[36m[2018-03-28T16:27:20.561 16:27:20] [DEBUG[39m] - both ubuntudev 25513 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522245973,
+  exp: 1522332373 }
+[36m[2018-03-28T16:27:20.561 16:27:20] [DEBUG[39m] - both ubuntudev 25513 - Ordinary user
+[31m[2018-03-28T16:27:29.059 16:27:29] [ERROR[39m] - both ubuntudev 25513 - Error Token not provided
+[31m[2018-03-28T16:27:29.063 16:27:29] [ERROR[39m] - both ubuntudev 25513 - Error Token not provided
+[31m[2018-03-28T16:27:35.299 16:27:35] [ERROR[39m] - both ubuntudev 25513 - Error Token not provided
+[31m[2018-03-28T16:27:35.301 16:27:35] [ERROR[39m] - both ubuntudev 25513 - Error Token not provided
+[32m[2018-03-28T16:33:11.216 16:33:11] [INFO[39m] - both ubuntudev 25721 - Starting Authentication module
+[32m[2018-03-28T16:33:11.221 16:33:11] [INFO[39m] - both ubuntudev 25721 - Setting session
+[31m[2018-03-28T16:33:16.388 16:33:16] [ERROR[39m] - both ubuntudev 25721 - Error Token not provided
+[31m[2018-03-28T16:33:16.395 16:33:16] [ERROR[39m] - both ubuntudev 25721 - Error Token not provided
+[36m[2018-03-28T16:33:27.578 16:33:27] [DEBUG[39m] - both ubuntudev 25721 - Request local authentication, user :  admin
+[36m[2018-03-28T16:33:27.579 16:33:27] [DEBUG[39m] - both ubuntudev 25721 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T16:33:27.579 16:33:27] [DEBUG[39m] - both ubuntudev 25721 - username : admin
+[36m[2018-03-28T16:33:27.579 16:33:27] [DEBUG[39m] - both ubuntudev 25721 - password : admin
+[36m[2018-03-28T16:33:27.580 16:33:27] [DEBUG[39m] - both ubuntudev 25721 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T16:33:27.580 16:33:27] [INFO[39m] - both ubuntudev 25721 - Authentication succede
+[36m[2018-03-28T16:33:27.583 16:33:27] [DEBUG[39m] - both ubuntudev 25721 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjQ3NjA3LCJleHAiOjE1MjIzMzQwMDd9.s5LSfn7TdCZ7RyEXgpMR3ja53aE2K2n2iolVcGn-Ido
+[36m[2018-03-28T16:33:28.837 16:33:28] [DEBUG[39m] - both ubuntudev 25721 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522247607,
+  exp: 1522334007 }
+[36m[2018-03-28T16:33:28.840 16:33:28] [DEBUG[39m] - both ubuntudev 25721 - Ordinary user
+[36m[2018-03-28T16:33:28.850 16:33:28] [DEBUG[39m] - both ubuntudev 25721 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522247607,
+  exp: 1522334007 }
+[36m[2018-03-28T16:33:28.851 16:33:28] [DEBUG[39m] - both ubuntudev 25721 - Ordinary user
+[31m[2018-03-28T16:33:38.312 16:33:38] [ERROR[39m] - both ubuntudev 25721 - Error Token not provided
+[31m[2018-03-28T16:33:38.316 16:33:38] [ERROR[39m] - both ubuntudev 25721 - Error Token not provided

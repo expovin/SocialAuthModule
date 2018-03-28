@@ -1,2 +1,7 @@
-<h1 [hidden]="!error">{{errMessage.status}} - {{errMessage.text}} </h1>
-<h1 [hidden]="error">Login Successful!</h1>
+<div [hidden]="!error">
+    <h1 [hidden]="!error">Login Error!</h1>
+</div>
+<div [hidden]="error">
+    <h1>Login Successful!</h1>
+    <p>Token: {{token}}></p>
+</div>

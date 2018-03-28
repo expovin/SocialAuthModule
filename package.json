@@ -29,6 +29,8 @@
     "jsonwebtoken": "^8.2.0",
     "log4js": "^2.5.3",
     "morgan": "~1.9.0",
+    "ng2-bootstrap-modal": "^1.0.1",
+    "ngx-cookie-service": "^1.0.10",
     "oauth": "^0.9.15",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
