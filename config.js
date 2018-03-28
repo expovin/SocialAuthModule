@@ -5,7 +5,7 @@ module.exports = {
 
     /** Session Secret Key */
     secret : '!5:~9F{W>s_PUIgW(bS/t`xRsV=Rv$CO|u_LzA,XeWmWq',
-    TokenExpirees : 3600 * 24,
+    TokenExpirees : 3600 * 1,
     
 
     /** Log section for the standard log the parameters are:

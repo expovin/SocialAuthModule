@@ -583,3 +583,210 @@
 [36m[2018-03-28T17:04:35.509 17:04:35] [DEBUG[39m] - both ubuntudev 26917 - Check credential user:  eee  password :  eee
 [32m[2018-03-28T17:04:35.510 17:04:35] [INFO[39m] - both ubuntudev 26917 - Authentication error. User/password not correct
 [31m[2018-03-28T17:04:35.510 17:04:35] [ERROR[39m] - both ubuntudev 26917 - Error authentication module local policy:  Error authentication. User/Password not valid
+[32m[2018-03-28T21:33:43.971 21:33:43] [INFO[39m] - both iMac-di-Vincenzo 1180 - Starting Authentication module
+[32m[2018-03-28T21:33:43.983 21:33:43] [INFO[39m] - both iMac-di-Vincenzo 1180 - Setting session
+[31m[2018-03-28T21:33:54.892 21:33:54] [ERROR[39m] - both iMac-di-Vincenzo 1180 - Error Token not provided
+[36m[2018-03-28T21:34:05.902 21:34:05] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - Request local authentication, user :  admin
+[36m[2018-03-28T21:34:05.903 21:34:05] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T21:34:05.904 21:34:05] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - username : admin
+[36m[2018-03-28T21:34:05.905 21:34:05] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - password : admin
+[36m[2018-03-28T21:34:05.905 21:34:05] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T21:34:05.907 21:34:05] [INFO[39m] - both iMac-di-Vincenzo 1180 - Authentication succede
+[36m[2018-03-28T21:34:05.912 21:34:05] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjY1NjQ1LCJleHAiOjE1MjIzNTIwNDV9.hz0MliKQc3WMpwsdcEMGoPw9bLImY279mrc-4WbDSW8
+[31m[2018-03-28T21:34:09.615 21:34:09] [ERROR[39m] - both iMac-di-Vincenzo 1180 - Error Token not provided
+[36m[2018-03-28T21:34:10.128 21:34:10] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T21:34:10.134 21:34:10] [DEBUG[39m] - both iMac-di-Vincenzo 1180 - Ordinary user
+[32m[2018-03-28T21:55:46.322 21:55:46] [INFO[39m] - both iMac-di-Vincenzo 1458 - Starting Authentication module
+[32m[2018-03-28T21:55:46.334 21:55:46] [INFO[39m] - both iMac-di-Vincenzo 1458 - Setting session
+[36m[2018-03-28T21:55:52.812 21:55:52] [DEBUG[39m] - both iMac-di-Vincenzo 1458 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T21:55:52.819 21:55:52] [DEBUG[39m] - both iMac-di-Vincenzo 1458 - Ordinary user
+[36m[2018-03-28T21:55:52.835 21:55:52] [DEBUG[39m] - both iMac-di-Vincenzo 1458 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T21:55:52.845 21:55:52] [DEBUG[39m] - both iMac-di-Vincenzo 1458 - Ordinary user
+[32m[2018-03-28T22:10:45.675 22:10:45] [INFO[39m] - both iMac-di-Vincenzo 1513 - Starting Authentication module
+[32m[2018-03-28T22:10:45.686 22:10:45] [INFO[39m] - both iMac-di-Vincenzo 1513 - Setting session
+[36m[2018-03-28T22:10:50.863 22:10:50] [DEBUG[39m] - both iMac-di-Vincenzo 1513 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:10:50.866 22:10:50] [DEBUG[39m] - both iMac-di-Vincenzo 1513 - Ordinary user
+[32m[2018-03-28T22:12:41.250 22:12:41] [INFO[39m] - both iMac-di-Vincenzo 1539 - Starting Authentication module
+[32m[2018-03-28T22:12:41.261 22:12:41] [INFO[39m] - both iMac-di-Vincenzo 1539 - Setting session
+[36m[2018-03-28T22:12:46.142 22:12:46] [DEBUG[39m] - both iMac-di-Vincenzo 1539 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:12:46.148 22:12:46] [DEBUG[39m] - both iMac-di-Vincenzo 1539 - Ordinary user
+[36m[2018-03-28T22:12:46.161 22:12:46] [DEBUG[39m] - both iMac-di-Vincenzo 1539 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:12:46.187 22:12:46] [DEBUG[39m] - both iMac-di-Vincenzo 1539 - Ordinary user
+[32m[2018-03-28T22:19:59.022 22:19:59] [INFO[39m] - both iMac-di-Vincenzo 1580 - Starting Authentication module
+[32m[2018-03-28T22:19:59.035 22:19:59] [INFO[39m] - both iMac-di-Vincenzo 1580 - Setting session
+[36m[2018-03-28T22:20:05.196 22:20:05] [DEBUG[39m] - both iMac-di-Vincenzo 1580 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:20:05.201 22:20:05] [DEBUG[39m] - both iMac-di-Vincenzo 1580 - Ordinary user
+[36m[2018-03-28T22:20:05.247 22:20:05] [DEBUG[39m] - both iMac-di-Vincenzo 1580 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:20:05.248 22:20:05] [DEBUG[39m] - both iMac-di-Vincenzo 1580 - Ordinary user
+[32m[2018-03-28T22:50:29.498 22:50:29] [INFO[39m] - both iMac-di-Vincenzo 1696 - Starting Authentication module
+[32m[2018-03-28T22:50:29.508 22:50:29] [INFO[39m] - both iMac-di-Vincenzo 1696 - Setting session
+[36m[2018-03-28T22:50:35.281 22:50:35] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:50:35.285 22:50:35] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Ordinary user
+[36m[2018-03-28T22:50:36.253 22:50:36] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:50:36.255 22:50:36] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Ordinary user
+[36m[2018-03-28T22:50:36.284 22:50:36] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:50:36.284 22:50:36] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Ordinary user
+[36m[2018-03-28T22:50:56.277 22:50:56] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522265645,
+  exp: 1522352045 }
+[36m[2018-03-28T22:50:56.279 22:50:56] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Ordinary user
+[31m[2018-03-28T22:50:57.170 22:50:57] [ERROR[39m] - both iMac-di-Vincenzo 1696 - Error Token not provided
+[31m[2018-03-28T22:50:57.191 22:50:57] [ERROR[39m] - both iMac-di-Vincenzo 1696 - Error Token not provided
+[36m[2018-03-28T22:52:52.678 22:52:52] [DEBUG[39m] - both iMac-di-Vincenzo 1696 - Request local authentication, user :  
+[33m[2018-03-28T22:52:52.681 22:52:52] [WARN[39m] - both iMac-di-Vincenzo 1696 - Authentication error for user  false
+[32m[2018-03-28T22:55:14.902 22:55:14] [INFO[39m] - both iMac-di-Vincenzo 1781 - Starting Authentication module
+[32m[2018-03-28T22:55:14.913 22:55:14] [INFO[39m] - both iMac-di-Vincenzo 1781 - Setting session
+[32m[2018-03-28T22:56:34.321 22:56:34] [INFO[39m] - both iMac-di-Vincenzo 1815 - Starting Authentication module
+[32m[2018-03-28T22:56:34.332 22:56:34] [INFO[39m] - both iMac-di-Vincenzo 1815 - Setting session
+[31m[2018-03-28T22:56:48.313 22:56:48] [ERROR[39m] - both iMac-di-Vincenzo 1815 - Error Token not provided
+[36m[2018-03-28T22:57:01.707 22:57:01] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - Request local authentication, user :  admin
+[36m[2018-03-28T22:57:01.708 22:57:01] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T22:57:01.708 22:57:01] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - username : admin
+[36m[2018-03-28T22:57:01.709 22:57:01] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - password : admin
+[36m[2018-03-28T22:57:01.709 22:57:01] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T22:57:01.711 22:57:01] [INFO[39m] - both iMac-di-Vincenzo 1815 - Authentication succede
+[36m[2018-03-28T22:57:01.715 22:57:01] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjcwNjIxLCJleHAiOjE1MjIzNTcwMjF9.ypyZUg9jwGsYOBEyNqDP2cdjaoRqlsbxiPT9H5BdB8g
+[36m[2018-03-28T22:57:04.644 22:57:04] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522270621,
+  exp: 1522357021 }
+[36m[2018-03-28T22:57:04.651 22:57:04] [DEBUG[39m] - both iMac-di-Vincenzo 1815 - Ordinary user
+[32m[2018-03-28T23:03:55.687 23:03:55] [INFO[39m] - both iMac-di-Vincenzo 1857 - Starting Authentication module
+[32m[2018-03-28T23:03:55.697 23:03:55] [INFO[39m] - both iMac-di-Vincenzo 1857 - Setting session
+[36m[2018-03-28T23:04:01.563 23:04:01] [DEBUG[39m] - both iMac-di-Vincenzo 1857 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522270621,
+  exp: 1522357021 }
+[36m[2018-03-28T23:04:01.570 23:04:01] [DEBUG[39m] - both iMac-di-Vincenzo 1857 - Ordinary user
+[32m[2018-03-28T23:07:02.406 23:07:02] [INFO[39m] - both iMac-di-Vincenzo 1906 - Starting Authentication module
+[32m[2018-03-28T23:07:02.419 23:07:02] [INFO[39m] - both iMac-di-Vincenzo 1906 - Setting session
+[36m[2018-03-28T23:07:08.727 23:07:08] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522270621,
+  exp: 1522357021 }
+[36m[2018-03-28T23:07:08.730 23:07:08] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Ordinary user
+[36m[2018-03-28T23:07:09.819 23:07:09] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522270621,
+  exp: 1522357021 }
+[36m[2018-03-28T23:07:09.821 23:07:09] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Ordinary user
+[36m[2018-03-28T23:07:09.825 23:07:09] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522270621,
+  exp: 1522357021 }
+[36m[2018-03-28T23:07:09.826 23:07:09] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Ordinary user
+[36m[2018-03-28T23:07:16.539 23:07:16] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522270621,
+  exp: 1522357021 }
+[36m[2018-03-28T23:07:16.539 23:07:16] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Ordinary user
+[31m[2018-03-28T23:07:17.241 23:07:17] [ERROR[39m] - both iMac-di-Vincenzo 1906 - Error Token not provided
+[31m[2018-03-28T23:07:17.299 23:07:17] [ERROR[39m] - both iMac-di-Vincenzo 1906 - Error Token not provided
+[36m[2018-03-28T23:07:30.810 23:07:30] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Request local authentication, user :  admin
+[36m[2018-03-28T23:07:30.812 23:07:30] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T23:07:30.817 23:07:30] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - username : admin
+[36m[2018-03-28T23:07:30.818 23:07:30] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - password : admin
+[36m[2018-03-28T23:07:30.820 23:07:30] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T23:07:30.824 23:07:30] [INFO[39m] - both iMac-di-Vincenzo 1906 - Authentication succede
+[36m[2018-03-28T23:07:30.826 23:07:30] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjcxMjUwLCJleHAiOjE1MjIyNzQ4NTB9.Dl5gR5gjhUPWs_rkMBSx_cZqSK59Jto3YjcyEqXplp0
+[36m[2018-03-28T23:07:33.452 23:07:33] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271250,
+  exp: 1522274850 }
+[36m[2018-03-28T23:07:33.453 23:07:33] [DEBUG[39m] - both iMac-di-Vincenzo 1906 - Ordinary user
+[32m[2018-03-28T23:10:07.496 23:10:07] [INFO[39m] - both iMac-di-Vincenzo 1943 - Starting Authentication module
+[32m[2018-03-28T23:10:07.506 23:10:07] [INFO[39m] - both iMac-di-Vincenzo 1943 - Setting session
+[36m[2018-03-28T23:10:11.539 23:10:11] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271250,
+  exp: 1522274850 }
+[36m[2018-03-28T23:10:11.543 23:10:11] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Ordinary user
+[36m[2018-03-28T23:10:11.557 23:10:11] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271250,
+  exp: 1522274850 }
+[36m[2018-03-28T23:10:11.561 23:10:11] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Ordinary user
+[36m[2018-03-28T23:10:29.216 23:10:29] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271250,
+  exp: 1522274850 }
+[36m[2018-03-28T23:10:29.218 23:10:29] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Ordinary user
+[31m[2018-03-28T23:10:30.094 23:10:30] [ERROR[39m] - both iMac-di-Vincenzo 1943 - Error Token not provided
+[31m[2018-03-28T23:10:30.100 23:10:30] [ERROR[39m] - both iMac-di-Vincenzo 1943 - Error Token not provided
+[36m[2018-03-28T23:10:44.668 23:10:44] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Request local authentication, user :  admin
+[36m[2018-03-28T23:10:44.669 23:10:44] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T23:10:44.669 23:10:44] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - username : admin
+[36m[2018-03-28T23:10:44.669 23:10:44] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - password : admin
+[36m[2018-03-28T23:10:44.670 23:10:44] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T23:10:44.676 23:10:44] [INFO[39m] - both iMac-di-Vincenzo 1943 - Authentication succede
+[36m[2018-03-28T23:10:44.682 23:10:44] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjcxNDQ0LCJleHAiOjE1MjIyNzUwNDR9.KW7abK-jinU__tswV7KcCHrzbfOzTMRTSESbZ925-6g
+[36m[2018-03-28T23:10:45.993 23:10:45] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271444,
+  exp: 1522275044 }
+[36m[2018-03-28T23:10:45.994 23:10:45] [DEBUG[39m] - both iMac-di-Vincenzo 1943 - Ordinary user
+[32m[2018-03-28T23:12:59.951 23:12:59] [INFO[39m] - both iMac-di-Vincenzo 1977 - Starting Authentication module
+[32m[2018-03-28T23:12:59.964 23:12:59] [INFO[39m] - both iMac-di-Vincenzo 1977 - Setting session
+[36m[2018-03-28T23:13:08.585 23:13:08] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271444,
+  exp: 1522275044 }
+[36m[2018-03-28T23:13:08.588 23:13:08] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Ordinary user
+[36m[2018-03-28T23:13:08.638 23:13:08] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271444,
+  exp: 1522275044 }
+[36m[2018-03-28T23:13:08.639 23:13:08] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Ordinary user
+[36m[2018-03-28T23:13:21.867 23:13:21] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271444,
+  exp: 1522275044 }
+[36m[2018-03-28T23:13:21.868 23:13:21] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Ordinary user
+[31m[2018-03-28T23:13:22.936 23:13:22] [ERROR[39m] - both iMac-di-Vincenzo 1977 - Error Token not provided
+[31m[2018-03-28T23:13:22.961 23:13:22] [ERROR[39m] - both iMac-di-Vincenzo 1977 - Error Token not provided
+[36m[2018-03-28T23:13:37.100 23:13:37] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Request local authentication, user :  admin
+[36m[2018-03-28T23:13:37.102 23:13:37] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Now in Authenticate method LocalStrategy, username:  admin
+[36m[2018-03-28T23:13:37.102 23:13:37] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - username : admin
+[36m[2018-03-28T23:13:37.103 23:13:37] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - password : admin
+[36m[2018-03-28T23:13:37.103 23:13:37] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Check credential user:  admin  password :  admin
+[32m[2018-03-28T23:13:37.105 23:13:37] [INFO[39m] - both iMac-di-Vincenzo 1977 - Authentication succede
+[36m[2018-03-28T23:13:37.109 23:13:37] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Token :  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidHlwZSI6Ik9yZGluYXJ5IiwiaWF0IjoxNTIyMjcxNjE3LCJleHAiOjE1MjIyNzUyMTd9.1G2Yx3DBPRpPl16rYwDa2MA48oIS0Ykaq1zY1reohDI
+[36m[2018-03-28T23:13:38.058 23:13:38] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Token verified :  { username: 'admin',
+  type: 'Ordinary',
+  iat: 1522271617,
+  exp: 1522275217 }
+[36m[2018-03-28T23:13:38.060 23:13:38] [DEBUG[39m] - both iMac-di-Vincenzo 1977 - Ordinary user

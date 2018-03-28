@@ -15,6 +15,7 @@ import { DataConfigService } from '../shared/data-config.service';
 export class NavBarComponent implements OnInit {
 
   logStatus:boolean;
+  username:string;
 
   constructor(private dialogService:DialogService,
               private dataConfigService: DataConfigService,
@@ -34,6 +35,7 @@ export class NavBarComponent implements OnInit {
       }
       else {
         console.log("You are logged in, token: ",token);
+        this.username=data.decoded.username;
         this.logStatus=true;
       }
         
