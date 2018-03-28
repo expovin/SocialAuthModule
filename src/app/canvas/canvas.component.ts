@@ -13,7 +13,7 @@ import { DataConfigService } from '../shared/data-config.service';
 })
 export class CanvasComponent implements OnInit {
 
-  info;
+  info = {Status:"", Code:"", Token:"", type:"", iat:"", exp:"", Message:""};
   token;
   errMessage={status:"",text:""};
   error:boolean=false;
@@ -34,12 +34,24 @@ export class CanvasComponent implements OnInit {
       if(!data.success){
         console.log("You are logged out");
         this.error=true;
+        this.info.Status="You are logged out";
+        this.info.Code=data.status;
+        this.info.Message=data.msg;
+
         this.errMessage.status=data.status;
         this.errMessage.text=data.msg;
       }
       else {
         console.log("You are logged in, token: ",token);
         this.error=false;
+        this.info.Status="You are logged in";
+        this.info.Code=data.status;
+        this.info.Message="Success!";
+        this.info.Token=token;
+        this.info.iat=data.decoded.iat;
+        this.info.type=data.decoded.type;
+        this.info.exp=data.decoded.exp;
+      
         this.token=token;
       }
         

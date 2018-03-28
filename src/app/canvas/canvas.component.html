@@ -1,7 +1,35 @@
-<div [hidden]="!error">
-    <h1 [hidden]="!error">Login Error!</h1>
-</div>
-<div [hidden]="error">
-    <h1>Login Successful!</h1>
-    <p>Token: {{token}}></p>
+<div class="container">
+    <div [hidden]="error" class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You are logged in.
+    </div>
+
+    <div [hidden]="!error" class="alert alert-danger" role="alert">
+            <strong>Error!</strong> You are logged out.
+        </div>
+
+                <dl class="row">
+                    <dt class="col-sm-3">Status</dt>
+                    <dt class="col-sm-9">: {{info.Status}}</dt>
+                
+                    <dt class="col-sm-3">Code</dt>
+                    <dt class="col-sm-9">: {{info.Code}}</dt>
+                
+                    <dt [hidden]="error" class="col-sm-3">Token</dt>
+                    <dt [hidden]="error" class="col-sm-9">: {{info.Token}}</dt>
+                
+                    <dt class="col-sm-3">Message</dt>
+                    <dt class="col-sm-9">: {{info.Message}}</dt>
+
+                    <dt [hidden]="error" class="col-sm-3">Type</dt>
+                    <dt [hidden]="error" class="col-sm-9">: {{info.type}}</dt>
+                
+                    <dt [hidden]="error" class="col-sm-3">Iat</dt>
+                    <dt [hidden]="error" class="col-sm-9">: {{info.iat}}</dt>
+                
+                    <dt [hidden]="error" class="col-sm-3">Exp</dt>
+                    <dt [hidden]="error" class="col-sm-9">: {{info.exp}}</dt>
+                </dl>
+
+
+
 </div>
