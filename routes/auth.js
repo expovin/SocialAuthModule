@@ -13,17 +13,26 @@ router.route('/')
     res.status(200).json({Return : 'OK'});
 })
 
+
 router.route('/info')
 .get( (req, res, next) => {
 
     res.status(200).json({status : 'OK', methods : ['local']});
 })
+
+
+router.route('/secure')
+.get(Verify.verifyOrdinaryUser, (req, res, next) => {
+    res.status(200).json({status : 'OK', content : "This content is visible only if you are logged in!"});
+})
+
+
 /** Local Authentication */
 router.route('/local')
 // Return some information on the use
 .get(Verify.verifyOrdinaryUser, (req, res, next) => {
 
-    res.status(200).json({success: true, user : 'You are correctly logged in as Ordinary user'});
+    res.status(200).json({success: true, user : 'You are correctly logged in as Ordinary user',decoded:req.decoded});
 })
 // Actual Local implementation
 .post( (req, res, next) => {

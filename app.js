@@ -58,10 +58,21 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
+  console.log("Error handling! ",err);
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
+  var msg="";
+
+  switch(err.status){
+    case 401: msg="Token verification error."; break;
+    case 402: msg="Profile does not fit the ordinary user."; break;
+    case 403: msg="No token provided!."; break;
+  }
+
+  res.status(err.status).json({success:false, status:err.status,msg:msg});
+  
   // render the error page
   res.status(err.status || 500);
   res.render('error');

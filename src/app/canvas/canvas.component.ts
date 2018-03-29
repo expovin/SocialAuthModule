@@ -61,7 +61,7 @@ export class CanvasComponent implements OnInit {
         var seconds = "0" + iatDate.getSeconds();
         this.info.tokenReleaseTime = day.substr(-2)+"/"+month.substr(-2)+"/"+year+" @"
                                     +hours.substr(-2)+":"+minutes.substr(-2)+":"+seconds.substr(-2);
-
+    
         var expDate = new Date(data.decoded.exp*1000);
         var day = "0" + expDate.getDay();
         var month = "0" + expDate.getMonth();
@@ -70,7 +70,6 @@ export class CanvasComponent implements OnInit {
         var minutes = "0" + expDate.getMinutes();
         this.info.tokenExpiryTime = day.substr(-2)+"/"+month.substr(-2)+"/"+year+" @"
                                     +hours.substr(-2)+":"+minutes.substr(-2)+":"+seconds.substr(-2);
-
 
         console.log("You are logged in, token: ",token);
         this.error=false;
@@ -88,7 +87,12 @@ export class CanvasComponent implements OnInit {
         
     },
     error =>{
+      console.log("Passato dall'errore ",error);
       this.error=true;
+      this.info.Status="You are logged out";
+      this.info.Code=error.status;
+      this.info.Message=error.statusText;
+
       this.errMessage.status=error.status;
       this.errMessage.text=error.statusText;
     })
