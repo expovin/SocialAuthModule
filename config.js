@@ -2,10 +2,18 @@ module.exports = {
 
     host: "localhost",
     port: "3000",
+    ports:"3443",
 
     /** Session Secret Key */
     secret : '!5:~9F{W>s_PUIgW(bS/t`xRsV=Rv$CO|u_LzA,XeWmWq',
     TokenExpirees : 3600 * 1,
+
+    /** HTTPs Certificate path files */
+    cert : {
+        pfx : './certs/mycert.pfx',
+        passphrase: 'secret',
+
+    },
     
 
     /** Log section for the standard log the parameters are:

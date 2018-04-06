@@ -6,7 +6,20 @@
 
 var app = require('../app');
 var debug = require('debug')('socialauthmodule:server');
+var config = require('../config')
+var fs = require('fs');
 var http = require('http');
+var https = require('https');
+var cert_pfx =  fs.readFileSync(config.cert.pfx);
+
+/** Define Credential */
+
+var credentials = {
+    pfx : cert_pfx,
+    passphrase: config.cert.passphrase,
+    requestCert: true,
+    rejectUnauthorized: false
+  };
 
 /**
  * Get port from environment and store in Express.
@@ -15,19 +28,25 @@ var http = require('http');
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+var Secureport = normalizePort(process.env.PORTS || config.ports);
+app.set('Secureport', Secureport);
+
 /**
  * Create HTTP server.
  */
 
 var server = http.createServer(app);
+var Secure_server = https.createServer(credentials, app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
 server.listen(port);
+Secure_server.listen(Secureport);
 server.on('error', onError);
 server.on('listening', onListening);
+
 
 /**
  * Normalize a port into a number, string, or false.
