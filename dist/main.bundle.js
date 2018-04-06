@@ -549,7 +549,7 @@ module.exports = ""
 /***/ "./src/app/private-page/private-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n  </div>\n\n  <iframe src='https://win-qn2klt7k35j/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&sheet=PfKsJK&opt=nointeraction&select=clearall' style='border:none;width:100%;height:100%;'></iframe>\n</div>"
+module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n  </div>\n</div>"
 
 /***/ }),
 
