@@ -17,15 +17,24 @@ router.route('/')
 router.route('/info')
 .get( (req, res, next) => {
 
-    res.status(200).json({status : 'OK', methods : ['local']});
+    res.status(200).json({success : true, methods : ['local']});
 })
 
 
 router.route('/secure')
 .get(Verify.verifyOrdinaryUser, (req, res, next) => {
-    res.status(200).json({status : 'OK', content : "This content is visible only if you are logged in!"});
+    res.status(200).json({success : true, content : "This content is visible only if you are logged in!"});
 })
 
+router.route('/public')
+.get((req, res, next) => {
+    res.status(200).json({success : true, content : "This is public content everyone can Browse, even if you are not logged in"});
+})
+
+router.route('/private')
+.get(Verify.verifyOrdinaryUser, (req, res, next) => {
+    res.status(200).json({success : true, content : "This is private content, you can brows only if you are not logged in!"});
+})
 
 /** Local Authentication */
 router.route('/local')

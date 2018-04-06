@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>This is a Private Page</h1>
+
+  <div [hidden]="!error" class="alert alert-danger" role="alert">
+      <strong>Error {{code}}!</strong> {{content}}
+  </div>
+
+  <div [hidden]="error">
+      <p>{{content}}</p>
+  </div>
+
+</div>

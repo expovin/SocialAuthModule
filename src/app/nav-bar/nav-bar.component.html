@@ -1,5 +1,18 @@
-<nav class="navbar navbar-light bg-light justify-content-between">
-  <a class="navbar-brand"><img src="assets/img/qlik-sense.png" width="80px"/>Authentication Module</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="canvas" class="navbar-brand"><img src="assets/img/qlik-sense.png" width="80px"/>Authentication Module</a>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="public">Public <!--<span class="sr-only">(current)</span>--></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="private">Privatate</a>
+      </li>
+    </ul>
+  </div>
+
+
   <div [hidden]="logStatus" class="logIcon">
     <span class="fa fa-sign-in" aria-hidden="true" (click)="openLoginModal()"></span>
   </div>
@@ -7,4 +20,5 @@
   <div [hidden]="!logStatus" class="logIcon">
         <h5>Wellcome {{username}} <span class="fa fa-sign-out" aria-hidden="true" (click)="logOut()"></span> </h5>
   </div>
+
 </nav>

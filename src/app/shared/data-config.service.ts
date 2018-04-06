@@ -21,15 +21,23 @@ export class DataConfigService {
     }
 
     getInfo( ): Observable<any[]> {
-        return this.http.get('auth/info').map(this.jsonParse);
+        return this.http.get('/auth/info').map(this.jsonParse);
     }
 
     loginLocal (credentials): Observable<any> {
-        return this.http.post('auth/local', credentials).map(this.jsonParse);
+        return this.http.post('/auth/local', credentials).map(this.jsonParse);
     }
 
     chkLocal(token): Observable<any> {
-        return this.http.get('auth/local?token='+token).map(this.jsonParse);
+        return this.http.get('/auth/local?token='+token).map(this.jsonParse);
+    }
+
+    getPrivateContent(token): Observable<any> {
+        return this.http.get('/auth/private?token='+token).map(this.jsonParse);
+    }
+
+    getPublicContent(): Observable<any>{
+        return this.http.get('/auth/public').map(this.jsonParse);
     }
 
 }
