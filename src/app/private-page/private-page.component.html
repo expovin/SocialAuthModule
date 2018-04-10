@@ -7,5 +7,15 @@
 
   <div [hidden]="error">
       <p>{{content}}</p>
+
+      <dl class="row">
+        <dt class="col-sm-3">QS Ticket</dt>
+        <dd class="col-sm-9">: {{QSTicket}}</dd>
+
+        <dt class="col-sm-3">url</dt>
+        <dd class="col-sm-9">: {{url}}</dd>
+    </dl>
+
+<!--      <iframe [src]="'http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=' + QSTicket" style='border:none;width:100%;height:600px;'></iframe> -->
   </div>
 </div>

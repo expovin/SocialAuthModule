@@ -39,6 +39,7 @@ export class LoginComponent extends DialogComponent<loginModel, boolean> impleme
     .subscribe ( result =>{
       console.log("Result : ",result);
       this.cookieService.set( 'SocialAuthModuleToken', result.token );
+
       location.reload();
       this.close();
 

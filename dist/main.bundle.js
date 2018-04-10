@@ -210,7 +210,7 @@ module.exports = ".container {\n    margin-top : 50px;\n}\n\np , li {\n    color
 /***/ "./src/app/canvas/canvas.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div [hidden]=\"error\" class=\"alert alert-success\" role=\"alert\">\n        <strong>Well done!</strong> You are logged in. <br> <small>{{info.Token}}</small>\n    </div>\n\n    <p>\n        This page shows how the authentication module works. It use the passport framework, you\n        can find more information here <a href=\"http://www.passportjs.org\">http://www.passportjs.org</a>.\n        This example implement only the local strategy, simulating the standard way a web application check\n        the user credential during the authentication phase.\n        This example check hardcoded users/password. In a real life situation it would get information from an \n        external source, such as a database.  \n        The users implemented here are:\n    </p>\n    <ul>\n        <li>admin/admin for Admin role</li>\n        <li>user/user for ordinary user role</li>\n    </ul>\n</div>\n\n<div class=\"container\">\n\n    <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n            <strong>Error!</strong> You are logged out.\n        </div>\n                <dl class=\"row\">\n                    <dt class=\"col-sm-3\">Status</dt>\n                    <dd class=\"col-sm-9\">: {{info.Status}}</dd>\n                \n                    <dt class=\"col-sm-3\">Code</dt>\n                    <dd class=\"col-sm-9\">: {{info.Code}}</dd>\n                \n                    <dt class=\"col-sm-3\">Message</dt>\n                    <dd class=\"col-sm-9\">: {{info.Message}}</dd>\n\n                    <dt [hidden]=\"error\" class=\"col-sm-3\">User</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.username}}</dd>\n\n                    <dt [hidden]=\"error\" class=\"col-sm-3\">Type</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.type}}</dd>\n                \n                    <dt [hidden]=\"error\" class=\"col-sm-3\">Release time</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.tokenReleaseTime}} ({{info.iat}})</dd>\n                \n                    <dt [hidden]=\"error\" class=\"col-sm-3\">Expiration time</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.tokenExpiryTime}} ({{info.exp}})</dd>\n                </dl>\n\n</div>\n"
+module.exports = "<div class=\"container\">\n    <div [hidden]=\"error\" class=\"alert alert-success\" role=\"alert\">\n        <strong>Well done!</strong> You are logged in. <br> <small>{{info.Token}} <br> QS Ticket : {{info.QSTicket}}</small>\n    </div>\n\n    <p>\n        This page shows how the authentication module works. It use the passport framework, you\n        can find more information here <a href=\"http://www.passportjs.org\">http://www.passportjs.org</a>.\n        This example implement only the local strategy, simulating the standard way a web application check\n        the user credential during the authentication phase.\n        This example check hardcoded users/password. In a real life situation it would get information from an \n        external source, such as a database.  \n        The users implemented here are:\n    </p>\n    <ul>\n        <li>admin/admin for Admin role</li>\n        <li>user/user for ordinary user role</li>\n    </ul>\n</div>\n\n<div class=\"container\">\n\n    <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n            <strong>Error!</strong> You are logged out.\n        </div>\n                <dl class=\"row\">\n                    <dt class=\"col-sm-3\">Status</dt>\n                    <dd class=\"col-sm-9\">: {{info.Status}}</dd>\n                \n                    <dt class=\"col-sm-3\">Code</dt>\n                    <dd class=\"col-sm-9\">: {{info.Code}}</dd>\n                \n                    <dt class=\"col-sm-3\">Message</dt>\n                    <dd class=\"col-sm-9\">: {{info.Message}}</dd>\n\n                    <dt [hidden]=\"error\" class=\"col-sm-3\">User</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.username}}</dd>\n\n                    <dt [hidden]=\"error\" class=\"col-sm-3\">Type</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.type}}</dd>\n                \n                    <dt [hidden]=\"error\" class=\"col-sm-3\">Release time</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.tokenReleaseTime}} ({{info.iat}})</dd>\n                \n                    <dt [hidden]=\"error\" class=\"col-sm-3\">Expiration time</dt>\n                    <dd [hidden]=\"error\" class=\"col-sm-9\">: {{info.tokenExpiryTime}} ({{info.exp}})</dd>\n\n                    <dt class=\"col-sm-3\">QS Ticket</dt>\n                    <dd class=\"col-sm-9\">: {{info.QSTicket}}</dd>\n                </dl>\n\n</div>\n"
 
 /***/ }),
 
@@ -250,7 +250,8 @@ var CanvasComponent = /** @class */ (function () {
             Message: "",
             username: "",
             tokenReleaseTime: "",
-            tokenExpiryTime: ""
+            tokenExpiryTime: "",
+            QSTicket: ""
         };
         this.errMessage = { status: "", text: "" };
         this.error = false;
@@ -300,6 +301,7 @@ var CanvasComponent = /** @class */ (function () {
                 _this.info.iat = data.decoded.iat;
                 _this.info.type = data.decoded.type;
                 _this.info.exp = data.decoded.exp;
+                _this.info.QSTicket = data.decoded.QSTicket;
                 _this.token = token;
             }
         }, function (error) {
@@ -549,7 +551,7 @@ module.exports = ""
 /***/ "./src/app/private-page/private-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n\n      <dl class=\"row\">\n        <dt class=\"col-sm-3\">QS Ticket</dt>\n        <dd class=\"col-sm-9\">: {{QSTicket}}</dd>\n\n        <dt class=\"col-sm-3\">url</dt>\n        <dd class=\"col-sm-9\">: {{url}}</dd>\n    </dl>\n\n<!--      <iframe [src]=\"'http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=' + QSTicket\" style='border:none;width:100%;height:600px;'></iframe> -->\n  </div>\n</div>"
 
 /***/ }),
 
@@ -577,11 +579,16 @@ var PrivatePageComponent = /** @class */ (function () {
     function PrivatePageComponent(dataConfigService, cookieService) {
         this.dataConfigService = dataConfigService;
         this.cookieService = cookieService;
+        this.url = "http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=";
     }
     PrivatePageComponent.prototype.ngOnInit = function () {
         var _this = this;
         var token = this.cookieService.get('SocialAuthModuleToken');
-        console.log("You are in a private area!");
+        this.dataConfigService.chkLocal(token)
+            .subscribe(function (data) {
+            _this.QSTicket = data.decoded.QSTicket;
+            _this.url += data.decoded.QSTicket;
+        });
         this.dataConfigService.getPrivateContent(token)
             .subscribe(function (data) {
             console.log("CheckLocal Auth: ", data);

@@ -14,6 +14,8 @@ export class PrivatePageComponent implements OnInit {
   error:boolean;
   content:string;
   code:string;
+  QSTicket:string;
+  url:string="http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=";
 
   constructor(private dataConfigService: DataConfigService,
               private cookieService: CookieService
@@ -21,8 +23,14 @@ export class PrivatePageComponent implements OnInit {
 
   ngOnInit() {
     var token = this.cookieService.get('SocialAuthModuleToken');
+    
 
-    console.log("You are in a private area!");
+    this.dataConfigService.chkLocal(token)
+    .subscribe(data =>{
+      this.QSTicket=data.decoded.QSTicket;
+      this.url+=data.decoded.QSTicket
+    })
+
     this.dataConfigService.getPrivateContent(token)
     .subscribe( data =>{
       console.log("CheckLocal Auth: ",data);

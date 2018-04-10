@@ -22,7 +22,8 @@ export class CanvasComponent implements OnInit {
             Message:"", 
             username:"",
             tokenReleaseTime:"", 
-            tokenExpiryTime:""
+            tokenExpiryTime:"",
+            QSTicket:""
           };
   token;
   errMessage={status:"",text:""};
@@ -81,6 +82,7 @@ export class CanvasComponent implements OnInit {
         this.info.iat=data.decoded.iat;
         this.info.type=data.decoded.type;
         this.info.exp=data.decoded.exp;
+        this.info.QSTicket=data.decoded.QSTicket;
       
         this.token=token;
       }

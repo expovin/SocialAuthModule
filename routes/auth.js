@@ -47,24 +47,23 @@ router.route('/local')
 .post( (req, res, next) => {
 
     log.debug("Request local authentication, user : ",req.body.username);
-    passport.authenticate('local', function(err, user) {
+    passport.authenticate('local', function(err, result) {
+        log.debug("Auth passport return result : ",result);
         // Need to manage the error handling
         if (err){
             log.error("Error authentication module local policy: ",err);
             return res.status(401).json({msg: "Authentication error"});
         }  
 
-        if(!user) {
+        if(!result.user) {
             // Return authentication error. Trace on log
-            log.warn("Authentication error for user ",user);
+            log.warn("Authentication error for user ",result.user);
             return res.status(401).json({err: "info"});
         }
 
-        var token = Verify.getToken({"username":user,"type":"Ordinary"});
-        log.debug("Token : ",token);
+        var token = Verify.getToken({"username":result.user,"role":result.role, "QSTicket":result.QSToken.Ticket});
 
-        res.status(200)
-        .json({ success : true, "token" : token })
+        res.status(200).json({ success : true, token : token, QSTicket: result.QSToken.Ticket});
     })(req,res,next);
 })
 

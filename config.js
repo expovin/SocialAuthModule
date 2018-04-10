@@ -8,11 +8,17 @@ module.exports = {
     secret : '!5:~9F{W>s_PUIgW(bS/t`xRsV=Rv$CO|u_LzA,XeWmWq',
     TokenExpirees : 3600 * 1,
 
-    /** HTTPs Certificate path files */
+    /** Self signed HTTPs Certificate path files */
     cert : {
         pfx : './certs/mycert.pfx',
         passphrase: 'secret',
+    },
 
+    /** QlikSense CA certificate */
+    QSCerts :{
+        cert : './certs/win-qn2klt7k35j/client.pem',
+        key : './certs/win-qn2klt7k35j/client_key.pem',
+        passphrase: 'secret'
     },
     
 
