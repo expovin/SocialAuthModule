@@ -17,13 +17,19 @@ export class PrivatePageComponent implements OnInit {
   content:string;
   code:string;
   QSTicket:string;
-  url:string="https://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&qlikTicket=";
+  objid:string[]=['tmaqpf','pDKRhr','nRxXG','JZMrdb','JEBdZz'];
+  appid:string="0b12d854-85e1-45b7-992b-7d6e1d03f887";
+  url:string="";
+  baseUrl:string="https://win-qn2klt7k35j/ctkt/single/?";
 
+  //"https://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&qlikTicket="; 
   constructor(private dataConfigService: DataConfigService,
               private cookieService: CookieService
               ) { }
 
   ngOnInit() {
+    this.url=this.baseUrl+"appid="+this.appid+"&obj="+this.objid[0]+"&opt=currsel&qlikTicket=";
+
     var token = this.cookieService.get('SocialAuthModuleToken');
     
 
@@ -53,6 +59,12 @@ export class PrivatePageComponent implements OnInit {
       this.code=error.status;
       this.content=error.statusText;
     })
+  }
+
+  changeObject(obj){
+    console.log("Change Object with : ",obj);
+    this.url=this.baseUrl+"appid="+this.appid+"&obj="+obj+"&opt=currsel&qlikTicket=";
+
   }
 
 }

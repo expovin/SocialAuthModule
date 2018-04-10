@@ -1,21 +1,34 @@
 <div class="container">
-  <h1>This is a Private Page</h1>
+    <h1>This is a Private Page</h1>
 
-  <div [hidden]="!error" class="alert alert-danger" role="alert">
-      <strong>Error {{code}}!</strong> {{content}}
-  </div>
+    <div class="container">
+        <div [hidden]="!error" class="alert alert-danger" role="alert">
+            <strong>Error {{code}}!</strong> {{content}}
+        </div>
+    </div>
 
-  <div [hidden]="error">
-      <p>{{content}}</p>
+    <div [hidden]="error" class="container">
+        <div class="row">
+            <p>{{content}}</p>
+        
+            <dl class="row">
+                <dt class="col-sm-3">QS Ticket</dt>
+                <dd class="col-sm-9">: {{QSTicket}}</dd>
+    
+                <dt class="col-sm-3">url</dt>
+                <dd class="col-sm-9">: {{url}}</dd>
+            </dl>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="btn-group-vertical">
+                    <button *ngFor="let obj of objid" type="button" class="btn btn-secondary" (click)="changeObject(obj)">{{obj}}</button>
+                </div>
+            </div>
 
-      <dl class="row">
-        <dt class="col-sm-3">QS Ticket</dt>
-        <dd class="col-sm-9">: {{QSTicket}}</dd>
-
-        <dt class="col-sm-3">url</dt>
-        <dd class="col-sm-9">: {{url}}</dd>
-    </dl>
-
-      <iframe [src]="url | safe" style='border:none;width:100%;height:600px;'></iframe>
-  </div>
+            <div class="col-md-9">
+                <iframe [src]="url | safe" style='border:none;width:100%;height:600px;'></iframe>
+            </div>
+        </div>
+    </div>
 </div>

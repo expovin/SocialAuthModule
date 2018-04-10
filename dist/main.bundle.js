@@ -554,7 +554,7 @@ module.exports = ""
 /***/ "./src/app/private-page/private-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n\n      <dl class=\"row\">\n        <dt class=\"col-sm-3\">QS Ticket</dt>\n        <dd class=\"col-sm-9\">: {{QSTicket}}</dd>\n\n        <dt class=\"col-sm-3\">url</dt>\n        <dd class=\"col-sm-9\">: {{url}}</dd>\n    </dl>\n\n      <iframe [src]=\"url | safe\" style='border:none;width:100%;height:600px;'></iframe>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n    <h1>This is a Private Page</h1>\n\n    <div class=\"container\">\n        <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n            <strong>Error {{code}}!</strong> {{content}}\n        </div>\n    </div>\n\n    <div [hidden]=\"error\" class=\"container\">\n        <div class=\"row\">\n            <p>{{content}}</p>\n        \n            <dl class=\"row\">\n                <dt class=\"col-sm-3\">QS Ticket</dt>\n                <dd class=\"col-sm-9\">: {{QSTicket}}</dd>\n    \n                <dt class=\"col-sm-3\">url</dt>\n                <dd class=\"col-sm-9\">: {{url}}</dd>\n            </dl>\n        </div>\n        <div class=\"row\">\n            <div class=\"col-md-3\">\n                <div class=\"btn-group-vertical\">\n                    <button *ngFor=\"let obj of objid\" type=\"button\" class=\"btn btn-secondary\" (click)=\"changeObject(obj)\">{{obj}}</button>\n                </div>\n            </div>\n\n            <div class=\"col-md-9\">\n                <iframe [src]=\"url | safe\" style='border:none;width:100%;height:600px;'></iframe>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -579,13 +579,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var PrivatePageComponent = /** @class */ (function () {
+    //"https://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&qlikTicket="; 
     function PrivatePageComponent(dataConfigService, cookieService) {
         this.dataConfigService = dataConfigService;
         this.cookieService = cookieService;
-        this.url = "https://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&qlikTicket=";
+        this.objid = ['tmaqpf', 'pDKRhr', 'nRxXG', 'JZMrdb', 'JEBdZz'];
+        this.appid = "0b12d854-85e1-45b7-992b-7d6e1d03f887";
+        this.url = "";
+        this.baseUrl = "https://win-qn2klt7k35j/ctkt/single/?";
     }
     PrivatePageComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.url = this.baseUrl + "appid=" + this.appid + "&obj=" + this.objid[0] + "&opt=currsel&qlikTicket=";
         var token = this.cookieService.get('SocialAuthModuleToken');
         this.dataConfigService.chkLocal(token)
             .subscribe(function (data) {
@@ -612,6 +617,10 @@ var PrivatePageComponent = /** @class */ (function () {
             _this.code = error.status;
             _this.content = error.statusText;
         });
+    };
+    PrivatePageComponent.prototype.changeObject = function (obj) {
+        console.log("Change Object with : ", obj);
+        this.url = this.baseUrl + "appid=" + this.appid + "&obj=" + obj + "&opt=currsel&qlikTicket=";
     };
     PrivatePageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
