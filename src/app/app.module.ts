@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { DataConfigService } from './shared/data-config.service';
+import { SafePipe } from './shared/PipeSafe';
 import { LoginComponent } from './login/login.component';
 import { PublicPageComponent } from './public-page/public-page.component';
 import { PrivatePageComponent } from './private-page/private-page.component';
@@ -23,6 +24,7 @@ import { PrivatePageComponent } from './private-page/private-page.component';
     CanvasComponent,
     LoginComponent,
     PublicPageComponent,
+    SafePipe,
     PrivatePageComponent
   ],
   imports: [

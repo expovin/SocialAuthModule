@@ -140,15 +140,17 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__nav_bar_nav_bar_component__ = __webpack_require__("./src/app/nav-bar/nav-bar.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__canvas_canvas_component__ = __webpack_require__("./src/app/canvas/canvas.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_data_config_service__ = __webpack_require__("./src/app/shared/data-config.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__login_login_component__ = __webpack_require__("./src/app/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__public_page_public_page_component__ = __webpack_require__("./src/app/public-page/public-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__private_page_private_page_component__ = __webpack_require__("./src/app/private-page/private-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_PipeSafe__ = __webpack_require__("./src/app/shared/PipeSafe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__login_login_component__ = __webpack_require__("./src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__public_page_public_page_component__ = __webpack_require__("./src/app/public-page/public-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__private_page_private_page_component__ = __webpack_require__("./src/app/private-page/private-page.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -173,9 +175,10 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_9__nav_bar_nav_bar_component__["a" /* NavBarComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__canvas_canvas_component__["a" /* CanvasComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__public_page_public_page_component__["a" /* PublicPageComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__private_page_private_page_component__["a" /* PrivatePageComponent */]
+                __WEBPACK_IMPORTED_MODULE_13__login_login_component__["a" /* LoginComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__public_page_public_page_component__["a" /* PublicPageComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__shared_PipeSafe__["a" /* SafePipe */],
+                __WEBPACK_IMPORTED_MODULE_15__private_page_private_page_component__["a" /* PrivatePageComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -187,7 +190,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap_modal__["BootstrapModalModule"].forRoot({ container: document.body })
             ],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_12__login_login_component__["a" /* LoginComponent */]
+                __WEBPACK_IMPORTED_MODULE_13__login_login_component__["a" /* LoginComponent */]
             ],
             providers: [__WEBPACK_IMPORTED_MODULE_11__shared_data_config_service__["a" /* DataConfigService */], __WEBPACK_IMPORTED_MODULE_6_ngx_cookie_service__["a" /* CookieService */]],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
@@ -551,7 +554,7 @@ module.exports = ""
 /***/ "./src/app/private-page/private-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n\n      <dl class=\"row\">\n        <dt class=\"col-sm-3\">QS Ticket</dt>\n        <dd class=\"col-sm-9\">: {{QSTicket}}</dd>\n\n        <dt class=\"col-sm-3\">url</dt>\n        <dd class=\"col-sm-9\">: {{url}}</dd>\n    </dl>\n\n<!--      <iframe [src]=\"'http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=' + QSTicket\" style='border:none;width:100%;height:600px;'></iframe> -->\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <h1>This is a Private Page</h1>\n\n  <div [hidden]=\"!error\" class=\"alert alert-danger\" role=\"alert\">\n      <strong>Error {{code}}!</strong> {{content}}\n  </div>\n\n  <div [hidden]=\"error\">\n      <p>{{content}}</p>\n\n      <dl class=\"row\">\n        <dt class=\"col-sm-3\">QS Ticket</dt>\n        <dd class=\"col-sm-9\">: {{QSTicket}}</dd>\n\n        <dt class=\"col-sm-3\">url</dt>\n        <dd class=\"col-sm-9\">: {{url}}</dd>\n    </dl>\n\n      <iframe [src]=\"url | safe\" style='border:none;width:100%;height:600px;'></iframe>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -579,7 +582,7 @@ var PrivatePageComponent = /** @class */ (function () {
     function PrivatePageComponent(dataConfigService, cookieService) {
         this.dataConfigService = dataConfigService;
         this.cookieService = cookieService;
-        this.url = "http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=";
+        this.url = "https://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&qlikTicket=";
     }
     PrivatePageComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -690,6 +693,42 @@ var PublicPageComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__shared_data_config_service__["a" /* DataConfigService */]])
     ], PublicPageComponent);
     return PublicPageComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/PipeSafe.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SafePipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SafePipe = /** @class */ (function () {
+    function SafePipe(sanitizer) {
+        this.sanitizer = sanitizer;
+    }
+    SafePipe.prototype.transform = function (url) {
+        return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    };
+    SafePipe = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'safe' }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]])
+    ], SafePipe);
+    return SafePipe;
 }());
 
 

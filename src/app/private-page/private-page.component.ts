@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 
+
+
 import { DataConfigService } from '../shared/data-config.service';
 
 @Component({
@@ -15,7 +17,7 @@ export class PrivatePageComponent implements OnInit {
   content:string;
   code:string;
   QSTicket:string;
-  url:string="http://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&Ticket=";
+  url:string="https://win-qn2klt7k35j/ctkt/single/?appid=0b12d854-85e1-45b7-992b-7d6e1d03f887&obj=NaKQwM&opt=currsel&select=clearall&qlikTicket=";
 
   constructor(private dataConfigService: DataConfigService,
               private cookieService: CookieService
